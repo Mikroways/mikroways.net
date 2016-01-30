@@ -2,7 +2,6 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -239,4 +238,36 @@
             font-size: 18px;
         }
     }
+}
+
+.site-language {
+    background-color: #002E56;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 0.5em;
+}
+
+.site-language ul {
+    margin-bottom: 0.5em;
+}
+
+.site-language ul li {
+    display: inline;
+}
+
+.site-language ul li span a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.site-language a:hover {
+    background-color: #0D3975;
+    padding: 1em;
+}
+
+.affix {
+  width: 100%;
+  top: 0px;
 }
