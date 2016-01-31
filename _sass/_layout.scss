@@ -273,9 +273,13 @@
   top: 0em;
 }
 
-.main-menu{
+.main-menu {
   width: 100%;
   text-align: center;
+  background-color: white;
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(102,102,102,0.2);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(102,102,102,0.2);
+  box-shadow: 0px 6px 5px 0px rgba(102,102,102,0.2);
 }
 
 .main-menu ul {
@@ -289,14 +293,14 @@
 .main-menu ul li a {
   text-decoration: none;
   display: inline-block;
-  padding: 1em;
+  padding: 1.2em 01em 1.4em 1em;
   color: #D1D2D4;
   font-size: 0.9em;
 }
 
 .main-menu ul li.menu-item a:hover {
-  border-bottom: 0.4em solid;
-  padding-bottom: 0.6em;
+  border-bottom: 0.3em solid;
+  padding-bottom: 1.1em;
   border-color: #002E56;
   color: #727477;
 }
