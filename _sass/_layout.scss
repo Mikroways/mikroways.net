@@ -279,6 +279,7 @@ h1.page-heading {
 .affix {
   width: 100%;
   top: 0em;
+  z-index: 1;
 }
 
 .main-menu {
@@ -419,4 +420,57 @@ h1.page-heading {
 
 .service a.capacitacion {
   background-color: #00A550;
+}
+
+.chef-partner {
+  background-color: #0276BC;
+  padding: 1em;
+}
+
+.chef-partner object.partnerships {
+  background-color: white;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
+  -moz-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
+  box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
+  width: 8em;
+  height: 8em;
+  padding: 1em;
+  border-style: solid;
+  border-color: #F7F7F7;
+  border-width: 1em;
+  -webkit-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
+  -moz-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
+  box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
+}
+
+.columns {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 0.5em;
+}
+
+.columns p {
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: white;
+  -webkit-margin-before: 0.1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.partner-title {
+  font-size: 2em;
+  font-weight: 700;
+  color: white;
+  margin-top: 1em;
+
 }
