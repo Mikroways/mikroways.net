@@ -422,9 +422,42 @@ h1.page-heading {
   background-color: #00A550;
 }
 
+.chef-partner-background {
+  padding: 6em;
+  background: url(/images/ambos-fondos.svg);
+  background-repeat: repeat-x;
+  background-position-y: 57em;
+}
+
 .chef-partner {
-  background-color: #0276BC;
-  padding: 1em;
+  margin-top: 6em;
+}
+
+.amazon-partner {
+  margin-top: 10em;
+}
+
+.amazon-partner object.partnerships {
+  background-color: white;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
+  -moz-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
+  box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
+  width: 10em;
+  height: 10em;
+  padding: 0em;
+  border-style: solid;
+  border-color: #F7F7F7;
+  border-width: 1em;
+  -webkit-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
+  -moz-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
+  box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
+  margin-top: 1.3em;
+  margin-left: 5em;
+  position: absolute;
 }
 
 .chef-partner object.partnerships {
@@ -436,15 +469,18 @@ h1.page-heading {
   -webkit-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
   -moz-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
   box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
-  width: 8em;
-  height: 8em;
-  padding: 1em;
+  width: 10em;
+  height: 10em;
+  padding: 0em;
   border-style: solid;
   border-color: #F7F7F7;
   border-width: 1em;
   -webkit-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
   -moz-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
   box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
+  margin-top: 1em;
+  margin-left: 5em;
+  position: absolute;
 }
 
 .columns {
@@ -465,6 +501,7 @@ h1.page-heading {
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
+  line-height: 1.8em;
 }
 
 .partner-title {
