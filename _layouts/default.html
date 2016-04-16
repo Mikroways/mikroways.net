@@ -2,20 +2,31 @@
 <html>
 
   {% include head.html %}
-
   <body>
-
+    {{ content }} <!-- Contenido del index -->
     {% include first_level_menu.html %}
     {% include header.html %}
-
-    <div class="page-content chef-partner-background amazon-partner-background">
+    <div class="page-content ">
       <div class="wrapper ">
-        {{ content }}
+        {% include services.html %}
+
       </div>
     </div>
-
+    <div class="fullscreen background">
+      <div class="content-a">
+          <div class="content-b">
+            <div class="page-content ">
+              <div class="wrapper ">
+                {% include partnerships.html %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/javascripts/googleMaps.js"></script>
+    {% include contacts.html %}
     {% include footer.html %}
 
   </body>
-
 </html>
