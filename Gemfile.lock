@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     colorator (0.1)
     ffi (1.9.10)
@@ -37,4 +38,4 @@ DEPENDENCIES
   jekyll-paginate
 
 BUNDLED WITH
-   1.10.3
+   1.11.2
