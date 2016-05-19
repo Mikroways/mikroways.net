@@ -921,6 +921,31 @@ p.verticaline {
   }
 }
 
+.team-link img {
+
+  &:hover {
+
+  }
+}
+
+.team-link {
+  h4.team-name {
+    color: #727477;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+  }
+
+  h6.team-ocupation {
+    color: #727477;
+    font-weight: 300;
+  }
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
 .company-columns p {
   text-align: justify;
   text-justify: inter-word;
