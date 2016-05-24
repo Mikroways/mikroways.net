@@ -348,10 +348,9 @@ h1.page-heading {
 
 .main-menu-index ul li.menu-item a:hover {
   color: white;
-  font-weight: 600;
-  border-bottom: 0.35em solid;
+  border-bottom: 0.25em solid;
   padding-bottom: 1em;
-  border-color: rgba(0,0,0,0.3);;
+  border-color: rgba(0,0,0,0.2);
 }
 
 
@@ -581,11 +580,13 @@ h1.page-heading {
 }
 
 .company-steps {
-  font-size: 1.3em;
-  font-weight: 700;
+  font-size: 2em;
+  font-weight: 100;
   color: gray;
   text-transform: uppercase;
-  padding-top: 1em;
+  padding-top: 0em;
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 /* background setup */
@@ -921,6 +922,10 @@ p.verticaline {
   }
 }
 
+.team-row {
+  margin-bottom: 2.5em;
+}
+
 .team-link img {
 
   &:hover {
@@ -946,34 +951,107 @@ p.verticaline {
     border-radius: 100%;
 }
 
-.company-columns p {
-  text-align: justify;
-  text-justify: inter-word;
-  color: #555;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-.company-columns ul {
-  text-align: justify;
-  text-justify: inter-word;
-  color: #555;
-  list-style-type: none;
-  margin-top: 2em;
-  margin-bottom: 8em;
-  margin-left: 0em;
-}
-
-.company-columns ul li {
-  margin-bottom: 1em;
+.company-columns {
+  text-align: center;
+  
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    color: #555;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #555;
+    font-weight: 300;
+    font-size: 0.9em;
+  }
+  
+  i {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+    
+  i.signal {
+    color: #154D94;
+    padding: 0.5em;
+    transition: 300ms ease-in-out;
+    &:hover{
+      background-color: #154D94;
+      border-radius: 200px 200px 200px 200px;
+      -moz-border-radius: 200px 200px 200px 200px;
+      -webkit-border-radius: 200px 200px 200px 200px;
+      border: 0px solid #000000;
+      color: white;
+      padding: 0.5em;
+      -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+    }
+  }
+  i.trophy {
+    color: #009A4A;
+    padding: 0.5em;
+    transition: 300ms ease-in-out;
+    border-radius: 200px 200px 200px 200px;
+      -moz-border-radius: 200px 200px 200px 200px;
+      -webkit-border-radius: 200px 200px 200px 200px;
+      border: 0px solid #000000;
+    &:hover{
+      background-color: #009A4A;
+      border-radius: 200px 200px 200px 200px;
+      -moz-border-radius: 200px 200px 200px 200px;
+      -webkit-border-radius: 200px 200px 200px 200px;
+      border: 0px solid #000000;
+      color: white;
+      padding: 0.5em;
+      -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+    }
+  }
+  i.users{
+    color: #7DC142;
+    padding: 0.5em;
+    transition: 300ms ease-in-out;
+    &:hover{
+      background-color: #7DC142;
+      border-radius: 200px 200px 200px 200px;
+      -moz-border-radius: 200px 200px 200px 200px;
+      -webkit-border-radius: 200px 200px 200px 200px;
+      border: 0px solid #000000;
+      color: white;
+      padding: 0.5em;
+      -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+    }
+  } 
+  i.bullhorn{
+    color: #369ED8;
+    padding: 0.5em;
+    transition: 300ms ease-in-out;
+    &:hover{
+      background-color: #369ED8;
+      border-radius: 200px 200px 200px 200px;
+      -moz-border-radius: 200px 200px 200px 200px;
+      -webkit-border-radius: 200px 200px 200px 200px;
+      border: 0px solid #000000;
+      color: white;
+      padding: 0.5em;
+      -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+    }
+  }
 }
 
 .company-content {
-  background-color: #f5f5f5;
+  background-color: white;
 }
 
 .clients-content {
-  background-color: white;
+  background-color: #FDFDFD;
 }
 
 
