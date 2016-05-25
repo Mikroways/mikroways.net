@@ -1,4 +1,5 @@
 var $contactForm = $('#contact-form');
+var $contactFormGlobal = $('#contact-form-global');
 $contactForm.submit(function(e) {
   e.preventDefault();
   if(! $contactForm.valid()) return false;
@@ -8,17 +9,17 @@ $contactForm.submit(function(e) {
     data: $(this).serialize(),
     dataType: 'json',
     beforeSend: function() {
-      $contactForm.find('.alert-success').hide();
-      $contactForm.find('.alert-danger').hide();
-      $contactForm.append('<div class="alert alert-info">Enviando mensaje...</div>');
+      $contactFormGlobal.find('.alert-success').hide();
+      $contactFormGlobal.find('.alert-danger').hide();
+      $('<div class="alert alert-info">Enviando mensaje...</div>').insertBefore("#contact-form");
     },
     success: function(data) {
-      $contactForm.find('.alert-info').hide();
-      $contactForm.append('<div class="alert alert-success">¡Gracias por tu contactarnos! Responderemos tu mensaje en breve.</div>');
+      $contactFormGlobal.find('.alert-info').hide();
+      $('<div class="alert alert-success">¡Gracias por tu contactarnos! Responderemos tu mensaje en breve.</div>').insertBefore("#contact-form");
     },
     error: function(err) {
-      $contactForm.find('.alert-info').hide();
-      $contactForm.append('<div class="alert alert-danger">El mensaje no se pudo enviar. Por favor, volvé a intentarlo.</div>');
+      $contactFormGlobal.find('.alert-info').hide();
+      $('<div class="alert alert-danger">El mensaje no se pudo enviar. Por favor, volvé a intentarlo.</div>').insertBefore("#contact-form");
     }
   });
 });
