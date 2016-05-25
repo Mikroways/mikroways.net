@@ -14,38 +14,37 @@
 						<p class="verticaline"><i class="fa fa-home" aria-hidden="true"></i> Calle 9 #562 2A</p>
 					</div>
 				</div>
-				<form class="form-horizontal">
+        <form id="contact-form" class="form-horizontal">
 				  <fieldset>
 				    <div class="row form-group">
 				      <div class="col-md-6">
-				        <input type="text" class="form-control" id="name" placeholder="Nombre">
+                <input class="form-control" type="text" name="name" placeholder="Nombre *" required>
 				      </div>
 				      <div class="col-md-6">
-				        <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                <input class="form-control" type="text" name="surname" placeholder="Apellido *" required>
 				      </div>
-				    </div>
+            </div>
 				    <div class="row form-group">
 				      <div class="col-md-6">
-				        <input type="email" class="form-control" id="email" placeholder="Email">
+                <input class="form-control" type="email" name="_replyto" placeholder="Email *" required>
 				      </div>
 				      <div class="col-md-6">
-				        <input type="telephone" class="form-control" id="telefono" placeholder="Telefono">
+                <input class="form-control" type="text" name="phone" placeholder="Teléfono">
 				      </div>
-				    </div>
-				    <div class="form-group">
+            </div>
+				    <div class="row form-group">
 				      <div class="col-md-12">
-				        <textarea class="form-control" rows="7" id="comment" placeholder="¡Dejanos tu comentario!"></textarea>
+                <textarea class="form-control" rows="7" id="comment" type="text" name="comment" placeholder="¡Dejanos tu comentario! *" required></textarea>
 				      </div>
-				    </div>
-				    <div class="form-group">
+            </div>
+            <input type="text" name="_gotcha" style="display:none" />
+				    <div class="row form-group">
 				      <div class="col-md-12">
-				        <button type="button" class="btn btn-lg btn-default cancel-button">Cancel</button>
-				        <button type="submit" class="btn btn-lg btn-succes submit-button">Submit</button>
-				      </div>
-				    </div>
+                <button type="submit" class="btn btn-lg btn-succes submit-button">Enviar</button>
+              </div>
+				    </div">
 				  </fieldset>
-				</form>
-				</div>
+        </form>
 			</div>
 		</div>
 		<div class="row">
