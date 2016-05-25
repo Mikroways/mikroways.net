@@ -1064,3 +1064,18 @@ object.scroll-style {
     transform: translate(0px, 50px);
   }
 }
+
+.map-overlay {
+  background:transparent; 
+  position:relative; 
+  width: 100%;
+  height:480px;
+  top:480px;
+  margin-top:-480px;
+}
+
+.map-frame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
