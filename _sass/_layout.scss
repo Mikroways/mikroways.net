@@ -670,7 +670,7 @@ h1.page-heading-team {
 }
 
 #partnership-title{
-  color:white;
+  color: white;
 }
 
 /* background setup */
@@ -685,7 +685,7 @@ h1.page-heading-team {
   position: absolute;
   background-size: cover;
   /** z-index: -999; */
-   z-index: 2;
+  z-index: 2;
 }
 
 .fullscreen-index {
@@ -945,8 +945,8 @@ p.verticaline {
 }
 
 .clients-link img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
   transition: 300ms ease-in-out;
 
   &:hover {
@@ -956,12 +956,20 @@ p.verticaline {
   }
 }
 
+.page-content.the-team-content {
+  margin-bottom: 5em;
+}
+
 .team-row {
   margin-bottom: 2.5em;
 }
 
 .team-link img {
-  width: 30%;
+  width: 40%;
+  -webkit-box-shadow: 0px 0px 22px -4px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 22px -4px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 22px -4px rgba(0,0,0,0.3);
+  border: solid 0.5em rgb(246, 246, 246);
   &:hover {
 
   }
@@ -970,9 +978,10 @@ p.verticaline {
 .team-link {
   h4.team-name {
     color: #727477;
-    margin-top: 1em;
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
-    font-weight: 500;
+    font-weight: 300;
+    font-size: 0.9em;
   }
 
   h6.team-ocupation {
@@ -1083,4 +1092,149 @@ object.scroll-style {
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+
+.sp-slideshow {
+  position: relative;
+}
+
+.sp-content {
+  background: #7d7f72;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 5em;
+}
+
+.sp-parallax-bg {
+  background: #FDFDFD repeat-x scroll 0 0;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sp-slideshow input {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  z-index: 1001;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.sp-slideshow input + label {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  display: block;
+  z-index: 1000;
+  border: 3px solid #727477;
+  border-radius: 50%;
+  transition: background-color linear 0.1s;
+}
+
+.sp-slideshow input:checked + label {
+  background-color: #727477;
+}
+
+.sp-selector-1, .button-label-1 {
+  margin-left: -36px;
+}
+
+.sp-selector-2, .button-label-2 {
+  margin-left: 0px;
+}
+
+.sp-selector-1:checked ~ .sp-arrow.sp-a2 {
+  right: 15px;
+  display: block;
+  background-position: top right;
+}
+.sp-selector-2:checked ~ .sp-arrow.sp-a1,
+.sp-selector-3:checked ~ .sp-arrow.sp-a2 {
+  left: 15px;
+  display: block;
+  background-position: top left;
+}
+
+.sp-slideshow input:checked ~ .sp-content {
+  transition: background-position linear 0.6s, background-color linear 0.8s;
+}
+
+.sp-slideshow input:checked ~ .sp-content .sp-parallax-bg {
+  transition: background-position linear 0.7s;
+}
+
+input.sp-selector-1:checked ~ .sp-content {
+  background-position: 0 0;
+  background-color: #727b7f;
+}
+
+input.sp-selector-2:checked ~ .sp-content {
+  background-position: -100px 0;
+  background-color: #7f7276;
+}
+
+
+input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {
+  background-position: 0 0;
+}
+
+input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {
+  background-position: -200px 0;
+}
+
+.sp-slider {
+  position: relative;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: left ease-in 0.8s; 
+}
+
+.sp-slider > li {
+  color: #fff;
+  width: 20%;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0 60px;
+  float: left;
+  text-align: center;
+  opacity: 0.4;
+  transition: opacity ease-in 0.4s 0.8s; 
+}
+.sp-slider > li img{
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  padding: 40px 0 50px 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+input.sp-selector-1:checked ~ .sp-content .sp-slider {
+  left: 0;
+}
+
+input.sp-selector-2:checked ~ .sp-content .sp-slider {
+  left: -100%;
+}
+
+
+input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
+input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2){
+  opacity: 1;
 }
