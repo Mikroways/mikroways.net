@@ -186,6 +186,14 @@ h1.page-heading {
   color: #727477;
 }
 
+h1.page-heading-team {
+  text-align: center;
+  font-size: 29px;
+  font-weight: 100;
+  margin: 2em 0em 2.5em 0em;
+  color: #727477;
+}
+
 .post-list {
     margin-left: 0;
     list-style: none;
@@ -428,39 +436,65 @@ h1.page-heading {
   text-align: left;
   line-height: 1.8em;
   padding-right: 1.5em;
+  min-height: 10em;
+  max-height: 10em;
 }
 
 .service a {
-  padding: 0.4em 0.6em 0.4em 0.6em;
-  background-color: red;
-  color: white;
-  font-weight: 700;
-  font-size: 1em;
-  margin: 80%;
+  padding: 0.3em 0.6em 0.3em 0.6em; 
 }
 
-.service a.devops{
+.service a i {
+  color: white;
+  font-size: 13px;
+}
+
+.service a.devops {
   background-color: #154D94;
+  transition: 300ms ease-in-out;
+  &:hover{
+    background-color: rgba(21, 77, 148, 0.54);
+  }
 }
 
 .service a.computacion {
   background-color: #009A4A;
+  transition: 300ms ease-in-out;
+  &:hover{
+    background-color: rgba(0,154,74,0.54);
+  }
 }
 
 .service a.consultoria {
   background-color: #7DC142;
+  transition: 300ms ease-in-out;
+  &:hover{
+    background-color: rgba(125,193,66,0.54);
+  }
 }
 
 .service a.outsourcing {
   background-color: #369ED8;
+  transition: 300ms ease-in-out;
+  &:hover{
+    background-color: rgba(54,158,216,0.54);
+  }
 }
 
 .service a.monitoreo {
   background-color: #0276BC;
+  transition: 300ms ease-in-out;
+  &:hover{
+    background-color: rgba(2,118,188,0.54);
+  }
 }
 
 .service a.capacitacion {
   background-color: #00A550;
+  transition: 300ms ease-in-out;
+  &:hover{
+    background-color: rgba(0,165,80,0.54);
+  }
 }
 
 
@@ -927,7 +961,7 @@ p.verticaline {
 }
 
 .team-link img {
-
+  width: 30%;
   &:hover {
 
   }
@@ -957,91 +991,62 @@ p.verticaline {
   p {
     text-align: justify;
     text-justify: inter-word;
-    color: #555;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    color: rgba(85, 85, 85, 0.83);
     text-align: justify;
     text-justify: inter-word;
     color: #555;
     font-weight: 300;
     font-size: 0.9em;
+    padding: 2em;
   }
   
   i {
-    font-size: 2em;
     margin-top: 1em;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 1px solid gray;
+    padding: 1.5em;
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+    -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+    color: gray;
   }
     
   i.signal {
-    color: #154D94;
-    padding: 0.5em;
     transition: 300ms ease-in-out;
     &:hover{
       background-color: #154D94;
-      border-radius: 200px 200px 200px 200px;
-      -moz-border-radius: 200px 200px 200px 200px;
-      -webkit-border-radius: 200px 200px 200px 200px;
-      border: 0px solid #000000;
+      border: 1px solid #154D94;
       color: white;
-      padding: 0.5em;
-      -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
-      -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
-      box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      padding: 1.5em;
     }
   }
   i.trophy {
-    color: #009A4A;
-    padding: 0.5em;
     transition: 300ms ease-in-out;
-    border-radius: 200px 200px 200px 200px;
-      -moz-border-radius: 200px 200px 200px 200px;
-      -webkit-border-radius: 200px 200px 200px 200px;
-      border: 0px solid #000000;
     &:hover{
       background-color: #009A4A;
-      border-radius: 200px 200px 200px 200px;
-      -moz-border-radius: 200px 200px 200px 200px;
-      -webkit-border-radius: 200px 200px 200px 200px;
-      border: 0px solid #000000;
+      border: 1px solid #009A4A;
       color: white;
-      padding: 0.5em;
-      -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
-      -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
-      box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      padding: 1.5em;
     }
   }
   i.users{
-    color: #7DC142;
-    padding: 0.5em;
     transition: 300ms ease-in-out;
     &:hover{
       background-color: #7DC142;
-      border-radius: 200px 200px 200px 200px;
-      -moz-border-radius: 200px 200px 200px 200px;
-      -webkit-border-radius: 200px 200px 200px 200px;
-      border: 0px solid #000000;
+      border: 1px solid #7DC142;
       color: white;
-      padding: 0.5em;
-      -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
-      -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
-      box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      padding: 1.5em;
     }
   } 
   i.bullhorn{
-    color: #369ED8;
-    padding: 0.5em;
     transition: 300ms ease-in-out;
     &:hover{
       background-color: #369ED8;
-      border-radius: 200px 200px 200px 200px;
-      -moz-border-radius: 200px 200px 200px 200px;
-      -webkit-border-radius: 200px 200px 200px 200px;
-      border: 0px solid #000000;
+      border: 1px solid #369ED8;
       color: white;
-      padding: 0.5em;
-      -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
-      -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
-      box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
+      padding: 1.5em;
     }
   }
 }
