@@ -100,6 +100,7 @@
 .site-footer {
   padding: $spacing-unit 0;
   background-color: rgba(22, 74, 146, 0.92);
+  padding-top: 6em;
 }
 
 .footer-heading {
@@ -788,6 +789,9 @@ i.chevron-down {
   border: 0px solid #000000;
   padding: 0.5em;
   margin-top: 0.8em;
+  &:hover{
+    color: rgba(255, 255, 255, 0.32);
+  }
 }
 
 .footer-chevron-up {
@@ -881,7 +885,6 @@ i.chevron-down {
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
-    border: 1px solid #164A92;
     background-color: #164A92;
     color: white;
   }
@@ -941,6 +944,9 @@ p.verticaline {
   text-align: center;
   text-decoration: none;
   padding: 1em;
+  &:hover {
+    color: rgba(255, 255, 255, 0.47);
+  }
 }
 
 .footer-contact-data {
@@ -975,7 +981,8 @@ p.verticaline {
 
   &:hover {
     -webkit-filter: none;
-    filter: none;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
 }
 
