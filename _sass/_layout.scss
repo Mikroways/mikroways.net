@@ -762,10 +762,9 @@ h1.caption {
   color: white;
   transition: 300ms ease-in-out;
   &:hover{
-    border-color: #002E56;
-    color: white;
-    background-color: #002E56;
-
+    border-color: #fbfbfb;
+    color: #0477BD;
+    background-color: #F7FFFF;
   }
 }
 
@@ -777,8 +776,10 @@ h1.caption {
   color: white;
   transition: 300ms ease-in-out;
   &:hover{
-    border-color: white;
+    border-color: #002E56;
     background-color: #0477BD;
+    border-color: #002E56;
+    color: #002E56;
   }
 }
 
