@@ -96,18 +96,15 @@
 /**
  * Site footer
  */
+
 .site-footer {
   padding: $spacing-unit 0;
-  background-color: #002E56;
-  -webkit-box-shadow: inset -1px 10px 28px 9px rgba(8,0,51,0.2);
-  -moz-box-shadow: inset -1px 10px 28px 9px rgba(8,0,51,0.2);
-  box-shadow: inset -1px 10px 28px 9px rgba(8,0,51,0.2);
+  background-color: rgba(22, 74, 146, 0.92);
 }
 
 .footer-heading {
   font-size: 18px;
   margin-bottom: $spacing-unit / 2;
-  margin-top: 3em;
 }
 
 .contact-list,
@@ -180,7 +177,7 @@
 
 h1.page-heading {
   text-align: center;
-  font-size: 29px;
+  font-size: 2em;
   font-weight: 100;
   margin: 6em 0em 2em 0em;
   color: #727477;
@@ -188,10 +185,18 @@ h1.page-heading {
 
 h1.page-heading-team {
   text-align: center;
-  font-size: 29px;
+  font-size: 2em;
   font-weight: 100;
   margin: 2em 0em 2.5em 0em;
   color: #727477;
+}
+
+h1.page-heading-clients {
+  color: #727477;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+  margin: 6em 0em 2.5em 0em;
 }
 
 .post-list {
@@ -281,11 +286,11 @@ h1.page-heading-team {
   color: white;
   text-decoration: none;
   padding: 1em;
-}
-
-.first-level-menu a:hover {
-  background-color: #0D3975;
-  padding: 1em;
+  transition: 300ms ease-in-out;
+  &:hover {
+    background-color: #0477BD;
+    padding: 1em;
+  }
 }
 
 .affix {
@@ -352,15 +357,11 @@ h1.page-heading-team {
   color: white;
   font-size: 0.9em;
   font-weight: 500;
+  transition: 300ms ease-in-out;
+  &:hover{
+    color: rgba(255, 255, 255, 0.38)
+  }
 }
-
-.main-menu-index ul li.menu-item a:hover {
-  color: white;
-  border-bottom: 0.25em solid;
-  padding-bottom: 1em;
-  border-color: rgba(0,0,0,0.2);
-}
-
 
 .logo-mikroways {
   margin-bottom: -8%;
@@ -374,6 +375,15 @@ h1.page-heading-team {
   margin-bottom: 5em;
 }
 
+.service {
+   /* background-color: #fbfbfb;
+    padding: 2em;
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.18);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.18);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.18);*/
+  &:hover{
+  }
+}
 
 .service i.devops {
   color: #154D94;
@@ -630,15 +640,15 @@ h1.page-heading-team {
   background-position: 50% 50%;
   /* ie8- graceful degradation */
   background-position: 50% 50%\9 !important;
-  margin-top: 11.5em;
+  margin-top: 2em;
   /** background-color: #154D94; **/
-    background-image: url("/images/partnership-background.png");
+  background-image: url("/images/partnership-background.png");
   width: initial;
   height: auto;
   position: relative;
   background-size: cover;
   /** z-index: -999; */
-   z-index: 0;
+  z-index: 0;
 }
 
 .fullscreen,
@@ -745,10 +755,17 @@ h1.caption {
 
 .wrapper.index p a.know-more {
   background-color: #0276BC;
-  border: 0.15em solid;
+  border: 0.2em solid;
   border-radius: 0em;
   border-color: white;
   color: white;
+  transition: 300ms ease-in-out;
+  &:hover{
+    border-color: #002E56;
+    color: white;
+    background-color: #002E56;
+
+  }
 }
 
 .wrapper.index p a.contact-us {
@@ -757,24 +774,26 @@ h1.caption {
   border-radius: 0em;
   border-color: #002E56;
   color: white;
+  transition: 300ms ease-in-out;
+  &:hover{
+    border-color: white;
+    background-color: #0477BD;
+  }
 }
 
 i.chevron-down {
   color: white;
   font-size: 1em;
-  background-color: #3E9FD7;
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
+  background-color: rgba(0, 0, 0, 0.44);
   border: 0px solid #000000;
-  padding: 1em;
-  margin-top: 4em;
+  padding: 0.5em;
+  margin-top: 0.8em;
 }
 
 .footer-chevron-up {
-  text-align: center;
+  text-align: right;
   margin-top: 0em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .map-style {
@@ -843,26 +862,34 @@ i.chevron-down {
   }
 }
 
-ul.social-media-list.icons-footer {
-  display: -webkit-box;
-  margin-left: 6.5em;
+.footer-icons {
+  /*background-color: #164A92;*/
 }
 
-ul.social-media-list.icons-footer li {
-  padding: 1em;
-  color: #4D688B;
+.footer-icons ul {
+  display: inline-flex;
+  text-align: center;
+  text-orientation: none;
 }
 
-ul.social-media-list.icons-footer li a {
-  color: #3E9FD7;
-}  
+.footer-icons ul li {
+  padding: 1em 1.3em 1em 1.3em;
+  margin-right: 0.5em;
+  list-style-type: none;
+  &:hover{
+    padding: 1em 1.3em 1em 1.3em;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 1px solid #164A92;
+    background-color: #164A92;
+    color: white;
+  }
 
-ul.social-media-list.icons-footer li a:hover {
-  color: #6295D7;
 }
 
-.footer-menu-service i {
-  padding: 1em;
+.footer-icons ul li a {
+  color: white;
 }
 
 
@@ -887,42 +914,39 @@ p.verticaline {
 }
 
 .footer-style {
-  margin-top: 1.5em;
   font-size:  0.8em;
-  margin-bottom: 1em;
+  font-weight: 400;
 }
 
 .footer-style.logotype {
   margin-top: 0em;
 }
 
-.footer-menu {
-    margin-top: 5em;
+
+.footer-menu-service ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  margin-top: 0.2em;
 }
 
-.footer-menu-service a {
-  line-height: 2em;
-  color: white;
-  font-weight: 500;
-  text-decoration: none;
+.footer-menu-service ul li {
+  float: left;
 }
 
-.footer-menu-company a {
+.footer-menu-service ul li a{
   color: white;
-  font-weight: 100;
-  line-height: 2em;
+  display: inline-block;
+  text-align: center;
   text-decoration: none;
+  padding: 1em;
 }
 
 .footer-contact-data {
   color: white;
   line-height: 2em;
   font-weight: 300;
-}
-
-.mikroways-footer {
-  padding-left: 5em;
-  padding-top: 0.5em;
 }
 
 .clients-row {
@@ -952,7 +976,6 @@ p.verticaline {
   &:hover {
     -webkit-filter: none;
     filter: none;
-    border-radius: 0;
   }
 }
 
@@ -1014,16 +1037,11 @@ p.verticaline {
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
-    border: 1px solid gray;
     padding: 1.5em;
-    -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
-    -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
-    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.18);
-    color: gray;
-  }
-    
-  i.signal {
+    color: #154D94;
+    border: 1px solid #D2D2D2;
     transition: 300ms ease-in-out;
+
     &:hover{
       background-color: #154D94;
       border: 1px solid #154D94;
@@ -1031,37 +1049,10 @@ p.verticaline {
       padding: 1.5em;
     }
   }
-  i.trophy {
-    transition: 300ms ease-in-out;
-    &:hover{
-      background-color: #009A4A;
-      border: 1px solid #009A4A;
-      color: white;
-      padding: 1.5em;
-    }
-  }
-  i.users{
-    transition: 300ms ease-in-out;
-    &:hover{
-      background-color: #7DC142;
-      border: 1px solid #7DC142;
-      color: white;
-      padding: 1.5em;
-    }
-  } 
-  i.bullhorn{
-    transition: 300ms ease-in-out;
-    &:hover{
-      background-color: #369ED8;
-      border: 1px solid #369ED8;
-      color: white;
-      padding: 1.5em;
-    }
-  }
 }
 
 .company-content {
-  background-color: white;
+ /*TODO*/
 }
 
 .clients-content {
@@ -1095,21 +1086,30 @@ object.scroll-style {
 }
 
 
+
+
+
+
+
+/* --------------- Clients carrousel style --------------- */
+
 .sp-slideshow {
   position: relative;
+  background-color: #365DAB;
+  padding-bottom: 4em;
 }
 
 .sp-content {
-  background: #7d7f72;
+  background-color: rgba(251, 251, 251, 0);
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin-bottom: 5em;
+  background-color: #365DAB;
 }
 
 .sp-parallax-bg {
-  background: #FDFDFD repeat-x scroll 0 0;
+  background-color: rgba(251, 251, 251, 0) repeat-x scroll 0 0;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -1138,13 +1138,16 @@ object.scroll-style {
   height: 1em;
   display: block;
   z-index: 1000;
-  border: 3px solid #727477;
+  border: 1px solid white;
+  background-color: rgba(251, 251, 251, 0);
   border-radius: 50%;
   transition: background-color linear 0.1s;
+  margin-bottom: 5em;
 }
 
 .sp-slideshow input:checked + label {
-  background-color: #727477;
+  background-color: white;
+  /* button */
 }
 
 .sp-selector-1, .button-label-1 {
@@ -1177,12 +1180,12 @@ object.scroll-style {
 
 input.sp-selector-1:checked ~ .sp-content {
   background-position: 0 0;
-  background-color: #727b7f;
+  background-color: rgba(251, 251, 251, 0);
 }
 
 input.sp-selector-2:checked ~ .sp-content {
   background-position: -100px 0;
-  background-color: #7f7276;
+  background-color: rgba(251, 251, 251, 0);
 }
 
 
@@ -1238,3 +1241,5 @@ input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
 input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2){
   opacity: 1;
 }
+
+/* --------------- end clients carrousel style --------------- */
