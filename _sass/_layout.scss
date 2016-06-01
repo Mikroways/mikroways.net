@@ -1093,6 +1093,7 @@ object.scroll-style {
   position: relative;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -1251,3 +1252,9 @@ input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2){
 }
 
 /* --------------- end clients carrousel style --------------- */
+
+.error {
+  color: #a94442;
+  font-weight: 400;
+  font-size: 0.9em;
+}
