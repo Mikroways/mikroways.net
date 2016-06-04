@@ -98,9 +98,9 @@
  */
 
 .site-footer {
-  padding: $spacing-unit 0;
+  /*padding: $spacing-unit 0;*/
   background-color: rgba(22, 74, 146, 0.92);
-  padding-top: 6em;
+  padding: 8em;
 }
 
 .footer-heading {
@@ -370,6 +370,7 @@ h1.page-heading-clients {
 
 .logo-mikroways-blanco {
   margin-bottom: -15%;
+  margin-top: 5.5em;
 }
 
 .service-row {
@@ -386,28 +387,43 @@ h1.page-heading-clients {
   }
 }
 
+.service h3.service-number {
+  font-size: 4em;
+  margin-top: 0;
+  margin-bottom: -25px;
+  padding-top: 0;
+  padding-bottom: 0px;
+  z-index: 20;
+  font-weight: 600;
+  color: #eee;
+}
+
+.service i {
+  font-size: 1.5em;
+}
+
 .service i.devops {
-  color: #154D94;
-}
-
-.service i.computacion {
-  color: #009A4A;
-}
-
-.service i.consultoria {
-  color: #7DC142;
-}
-
-.service i.outsourcing {
   color: #369ED8;
 }
 
-.service i.monitoreo {
+.service i.computacion {
   color: #0276BC;
 }
 
-.service i.capacitacion {
+.service i.consultoria {
+  color: #154D94;
+}
+
+.service i.outsourcing {
+  color: #7DC142;
+}
+
+.service i.monitoreo {
   color: #00A550;
+}
+
+.service i.capacitacion {
+  color: #009A4A;
 }
 
 .service h2 {
@@ -417,27 +433,27 @@ h1.page-heading-clients {
 }
 
 .service h2.devops {
-  color: #154D94;
-}
-
-.service h2.computacion {
-  color: #009A4A;
-}
-
-.service h2.consultoria {
-  color: #7DC142;
-}
-
-.service h2.outsourcing {
   color: #369ED8;
 }
 
-.service h2.monitoreo {
+.service h2.computacion {
   color: #0276BC;
 }
 
-.service h2.capacitacion {
+.service h2.consultoria {
+  color: #154D94;
+}
+
+.service h2.outsourcing {
+  color: #7DC142;
+}
+
+.service h2.monitoreo {
   color: #00A550;
+}
+
+.service h2.capacitacion {
+  color: #009A4A;
 }
 
 .service p {
@@ -452,7 +468,14 @@ h1.page-heading-clients {
 }
 
 .service a {
-  padding: 0.3em 0.6em 0.3em 0.6em; 
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  transition: 300ms ease-in-out;
+  &:hover{
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+  }
 }
 
 .service a i {
@@ -461,30 +484,6 @@ h1.page-heading-clients {
 }
 
 .service a.devops {
-  background-color: #154D94;
-  transition: 300ms ease-in-out;
-  &:hover{
-    background-color: rgba(21, 77, 148, 0.54);
-  }
-}
-
-.service a.computacion {
-  background-color: #009A4A;
-  transition: 300ms ease-in-out;
-  &:hover{
-    background-color: rgba(0,154,74,0.54);
-  }
-}
-
-.service a.consultoria {
-  background-color: #7DC142;
-  transition: 300ms ease-in-out;
-  &:hover{
-    background-color: rgba(125,193,66,0.54);
-  }
-}
-
-.service a.outsourcing {
   background-color: #369ED8;
   transition: 300ms ease-in-out;
   &:hover{
@@ -492,19 +491,43 @@ h1.page-heading-clients {
   }
 }
 
-.service a.monitoreo {
-  background-color: #0276BC;
+.service a.computacion {
+  background-color: #0276BC; 
   transition: 300ms ease-in-out;
   &:hover{
-    background-color: rgba(2,118,188,0.54);
+    background-color: rgba(2,118,188,0.54); 
+  }
+}
+
+.service a.consultoria {
+  background-color: #154D94;
+  transition: 300ms ease-in-out;
+  &:hover{
+    background-color: rgba(21, 77, 148, 0.54);
+  }
+}
+
+.service a.outsourcing {
+  background-color: #7DC142; 
+  transition: 300ms ease-in-out;
+  &:hover{
+    background-color: rgba(125,193,66,0.54); 
+  }
+}
+
+.service a.monitoreo {
+  background-color: #00A550; 
+  transition: 300ms ease-in-out;
+  &:hover{
+    background-color: rgba(0,165,80,0.54); 
   }
 }
 
 .service a.capacitacion {
-  background-color: #00A550;
+  background-color: #009A4A; 
   transition: 300ms ease-in-out;
   &:hover{
-    background-color: rgba(0,165,80,0.54);
+    background-color: rgba(0,154,74,0.54); 
   }
 }
 
@@ -512,31 +535,23 @@ h1.page-heading-clients {
 .chef-partner {
   margin-top: 0em;
   margin-bottom: 2em;
-  background-color: rgba(0,0,169,0.15);
-  padding: 3em;
+  background-color: white;
+  padding: 3em 3em 3em 0em;
   text-align: center;
-  min-height: 500px;
-  max-height: 600px;
-  transition: 300ms ease-in-out;
-
-  &:hover {
-    background-color: #114E96;
-  }
+  min-height: 300px;
+  max-height: 300px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
 .amazon-partner {
   margin-top: 0em;
-  margin-bottom: 2em;
-  background-color: rgba(0,0,169,0.15);
-  padding: 3em;
+  margin-bottom:1em;
+  background-color: white;
+  padding: 3em 3em 3em 0em;
   text-align: center;
-  min-height: 500px;
-  max-height: 600px;
-  transition: 300ms ease-in-out;
-
-  &:hover {
-    background-color: #369DD8;
-  }
+  min-height: 300px;
+  max-height: 300px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
 .chef-partner object.partnerships {
@@ -545,23 +560,23 @@ h1.page-heading-clients {
   -moz-border-radius: 200px 200px 200px 200px;
   -webkit-border-radius: 200px 200px 200px 200px;
   border: 0px solid #000000;
-  -webkit-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
-  -moz-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
-  box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
-  width: 10em;
-  height: 10em;
+  -webkit-box-shadow: inset 0px 0px 29px -12px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: inset 0px 0px 29px -12px rgba(0, 0, 0, 0.44);
+  box-shadow: inset 0px 0px 29px -12px rgba(0, 0, 0, 0.44);
+  width: 8em;
+  height: 8em;
   padding: 0em;
   border-style: solid;
   border-color: rgba(232, 232, 232, 0.72);
-  border-width: 1em;
-  -webkit-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
-  -moz-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
-  box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
-  margin-top: 0em;
+  border-width: 0.5em;
+  -webkit-box-shadow: 13px 12px 29px -12px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 13px 12px 29px -12px rgba(0, 0, 0, 0.44);
+  box-shadow: 13px 12px 29px -12px rgba(0, 0, 0, 0.44);
+  margin-top: 2em;
   margin-left: 0em;
   position: relative;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
   transition: 300ms ease-in-out;
 
   &:hover {
@@ -579,8 +594,8 @@ h1.page-heading-clients {
   -webkit-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
   -moz-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
   box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
-  width: 10em;
-  height: 10em;
+  width: 8em;
+  height: 8em;
   padding: 0em;
   border-style: solid;
   border-color: #F7F7F7;
@@ -588,27 +603,23 @@ h1.page-heading-clients {
   -webkit-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
   -moz-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
   box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
-  margin-top: 0em;
+  margin-top: 2em;
   margin-left: 0em;
   position: relative;
   transition: 300ms ease-in-out;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
   &:hover {
     -webkit-filter: none;
     filter: none;
   }
 }
 
-.columns {
-}
-
 .columns p {
   text-align: justify;
   font-weight: 400;
   font-size: 0.9em;
-  color: white;
+  color: #727477;
   -webkit-margin-before: 0.1em;
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
@@ -619,7 +630,7 @@ h1.page-heading-clients {
 .partner-title {
   font-size: 2em;
   font-weight: 700;
-  color: white;
+  color: #727477;
   margin-top: 1em;
   text-align: left!important;
 }
@@ -643,7 +654,8 @@ h1.page-heading-clients {
   background-position: 50% 50%\9 !important;
   margin-top: 2em;
   /** background-color: #154D94; **/
-  background-image: url("/images/partnership-background.png");
+  /*background-image: url("/images/partnership-background.png");*/
+  background-color: white;
   width: initial;
   height: auto;
   position: relative;
@@ -789,7 +801,7 @@ i.chevron-down {
   background-color: rgba(0, 0, 0, 0.44);
   border: 0px solid #000000;
   padding: 0.5em;
-  margin-top: 0.8em;
+  margin-top: 6.8em;
   &:hover{
     color: rgba(255, 255, 255, 0.32);
   }
@@ -868,7 +880,7 @@ i.chevron-down {
 }
 
 .footer-icons {
-  /*background-color: #164A92;*/
+  margin-top: 6em;
 }
 
 .footer-icons ul {
@@ -932,7 +944,7 @@ p.verticaline {
   margin: 0;
   padding: 0;
   font-size: 0.8em;
-  margin-top: 0.2em;
+  margin-top: 8em;
 }
 
 .footer-menu-service ul li {
@@ -1093,168 +1105,33 @@ object.scroll-style {
   position: relative;
 }
 
-<<<<<<< HEAD
-
-
-
-
-
-
-/* --------------- Clients carrousel style --------------- */
-
-.sp-slideshow {
-  position: relative;
-  background-color: #365DAB;
-  padding-bottom: 4em;
-}
-
-.sp-content {
-  background-color: rgba(251, 251, 251, 0);
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: #365DAB;
-}
-
-.sp-parallax-bg {
-  background-color: rgba(251, 251, 251, 0) repeat-x scroll 0 0;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.sp-slideshow input {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  width: 9px;
-  height: 9px;
-  z-index: 1001;
-  cursor: pointer;
-  opacity: 0;
-}
-
-.sp-slideshow input + label {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  width: 1em;
-  height: 1em;
-  display: block;
-  z-index: 1000;
-  border: 1px solid white;
-  background-color: rgba(251, 251, 251, 0);
-  border-radius: 50%;
-  transition: background-color linear 0.1s;
-  margin-bottom: 5em;
-}
-
-.sp-slideshow input:checked + label {
-  background-color: white;
-  /* button */
-}
-
-.sp-selector-1, .button-label-1 {
-  margin-left: -36px;
-}
-
-.sp-selector-2, .button-label-2 {
-  margin-left: 0px;
-}
-
-.sp-selector-1:checked ~ .sp-arrow.sp-a2 {
-  right: 15px;
-  display: block;
-  background-position: top right;
-}
-.sp-selector-2:checked ~ .sp-arrow.sp-a1,
-.sp-selector-3:checked ~ .sp-arrow.sp-a2 {
-  left: 15px;
-  display: block;
-  background-position: top left;
-}
-
-.sp-slideshow input:checked ~ .sp-content {
-  transition: background-position linear 0.6s, background-color linear 0.8s;
-}
-
-.sp-slideshow input:checked ~ .sp-content .sp-parallax-bg {
-  transition: background-position linear 0.7s;
-}
-
-input.sp-selector-1:checked ~ .sp-content {
-  background-position: 0 0;
-  background-color: rgba(251, 251, 251, 0);
-}
-
-input.sp-selector-2:checked ~ .sp-content {
-  background-position: -100px 0;
-  background-color: rgba(251, 251, 251, 0);
-}
-
-
-input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {
-  background-position: 0 0;
-}
-
-input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {
-  background-position: -200px 0;
-}
-
-.sp-slider {
-  position: relative;
-  left: 0;
-  width: 500%;
-  height: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  transition: left ease-in 0.8s; 
-}
-
-.sp-slider > li {
-  color: #fff;
-  width: 20%;
-  box-sizing: border-box;
-  height: 100%;
-  padding: 0 60px;
-  float: left;
-  text-align: center;
-  opacity: 0.4;
-  transition: opacity ease-in 0.4s 0.8s; 
-}
-.sp-slider > li img{
-  box-sizing: border-box;
-  display: block;
-  margin: 0 auto;
-  padding: 40px 0 50px 0;
-  max-height: 100%;
-  max-width: 100%;
-}
-
-input.sp-selector-1:checked ~ .sp-content .sp-slider {
-  left: 0;
-}
-
-input.sp-selector-2:checked ~ .sp-content .sp-slider {
-  left: -100%;
-}
-
-
-input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
-input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2){
-  opacity: 1;
-}
-
-/* --------------- end clients carrousel style --------------- */
-
 .error {
   color: #a94442;
   font-weight: 400;
   font-size: 0.9em;
+}
+
+.clients-brand {
+  padding: 2em 1.8em;
+  background: #f2f1ed;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 1.5em;
+  text-align: center;
+  margin: 0 0 3% 3%;
+  float: left;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 300ms ease-in-out;
+
+  &:hover {
+    -webkit-filter: none;
+    filter: none;
+  }
+  img {
+    width: 70%;
+  }
 }
