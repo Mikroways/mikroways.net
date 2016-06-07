@@ -98,9 +98,8 @@
  */
 
 .site-footer {
-  /*padding: $spacing-unit 0;*/
   background-color: rgba(22, 74, 146, 0.92);
-  padding: 8em;
+  padding: 4.5em;
 }
 
 .footer-heading {
@@ -176,6 +175,14 @@
     font-size: 20px;
 }
 
+h1.page-heading-company {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+  margin: 6em 0em 2em 0em;
+  color: white;
+}
+
 h1.page-heading {
   text-align: center;
   font-size: 2em;
@@ -198,6 +205,14 @@ h1.page-heading-clients {
   font-size: 2em;
   font-weight: 100;
   margin: 6em 0em 2.5em 0em;
+}
+
+h1.page-heading-service {
+  color: #727477;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+  margin: 7em 0em 2.5em 0em;
 }
 
 .post-list {
@@ -378,11 +393,6 @@ h1.page-heading-clients {
 }
 
 .service {
-   /* background-color: #fbfbfb;
-    padding: 2em;
-    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.18);
-    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.18);
-    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.18);*/
   &:hover{
   }
 }
@@ -395,7 +405,7 @@ h1.page-heading-clients {
   padding-bottom: 0px;
   z-index: 20;
   font-weight: 600;
-  color: #eee;
+  color: rgba(228, 226, 226, 0.75);
 }
 
 .service i {
@@ -532,87 +542,62 @@ h1.page-heading-clients {
 }
 
 
+.partners {
+  float: left;
+  width: 28em;
+  height: 28em;
+  margin: 1em;
+}
+
 .chef-partner {
   margin-top: 0em;
-  margin-bottom: 2em;
+  /*background-color: #369ED8;*/
   background-color: white;
-  padding: 3em 3em 3em 0em;
+  padding: 3em 3em 3em 3em;
   text-align: center;
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 400px;
+  max-height: 400px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  transition: 300ms ease-in-out;
+  &:hover {
+
+  }
 }
 
 .amazon-partner {
   margin-top: 0em;
-  margin-bottom:1em;
+  /*background-color: #154D94;*/
   background-color: white;
-  padding: 3em 3em 3em 0em;
+  padding: 3em 3em 3em 3em;
   text-align: center;
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 400px;
+  max-height: 400px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-}
-
-.chef-partner object.partnerships {
-  background-color: white;
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 0px solid #000000;
-  -webkit-box-shadow: inset 0px 0px 29px -12px rgba(0, 0, 0, 0.44);
-  -moz-box-shadow: inset 0px 0px 29px -12px rgba(0, 0, 0, 0.44);
-  box-shadow: inset 0px 0px 29px -12px rgba(0, 0, 0, 0.44);
-  width: 8em;
-  height: 8em;
-  padding: 0em;
-  border-style: solid;
-  border-color: rgba(232, 232, 232, 0.72);
-  border-width: 0.5em;
-  -webkit-box-shadow: 13px 12px 29px -12px rgba(0, 0, 0, 0.44);
-  -moz-box-shadow: 13px 12px 29px -12px rgba(0, 0, 0, 0.44);
-  box-shadow: 13px 12px 29px -12px rgba(0, 0, 0, 0.44);
-  margin-top: 2em;
-  margin-left: 0em;
-  position: relative;
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
   transition: 300ms ease-in-out;
-
   &:hover {
-    -webkit-filter: none;
-    filter: none;
+   
   }
 }
 
-.amazon-partner object.partnerships {
-  background-color: white;
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 0px solid #000000;
-  -webkit-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
-  -moz-box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
-  box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.44);
-  width: 8em;
-  height: 8em;
-  padding: 0em;
-  border-style: solid;
-  border-color: #F7F7F7;
-  border-width: 1em;
-  -webkit-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
-  -moz-box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
-  box-shadow: 13px 12px 29px -12px rgba(0,0,0,0.44);
+.partnerships-logo {
+  text-align: center;
+}
+
+img.partnerships.amazon{
+  width: 50%;
+  margin-bottom: 2.5em;
   margin-top: 2em;
-  margin-left: 0em;
-  position: relative;
-  transition: 300ms ease-in-out;
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-  &:hover {
-    -webkit-filter: none;
-    filter: none;
-  }
+}
+
+img.partnerships.chef{
+  width: 30%;
+  margin-bottom: 2em;
+}
+
+
+object.partnerships {
+  width: 7em;
+  height: 7em;
 }
 
 .columns p {
@@ -627,12 +612,19 @@ h1.page-heading-clients {
   line-height: 1.8em;
 }
 
-.partner-title {
+h3.partner-title.chef {
+    font-size: 2em;
+    font-weight: 700;
+    color: #727477;
+    text-align: left;
+
+}
+
+h3.partner-title.amazon {
+  text-align: left !important; 
   font-size: 2em;
   font-weight: 700;
   color: #727477;
-  margin-top: 1em;
-  text-align: left!important;
 }
 
 .company-steps {
@@ -736,7 +728,7 @@ h1.page-heading-clients {
   display:table-cell;
   position:relative;
   vertical-align: middle;
-  top: 2.5em;
+  top: 0em;
   text-align: center;
 }
 
@@ -744,10 +736,6 @@ h1.page-heading-clients {
 .servicios {
   margin-top: 50em;
   margin-bottom: 3em;
-}
-
-.wrapper.index  {
-  margin-top: -5em;
 }
 
 h1.caption {
@@ -758,8 +746,12 @@ h1.caption {
   line-height: 0.8em;
 }
 
+.wrapper.index  {
+  margin-top: -10em;
+}
+
 .wrapper.index p {
-  margin-top: 2em;
+  margin-top: 3.5em;
 }
 
 .wrapper.index p a {
@@ -849,11 +841,8 @@ i.chevron-down {
   border-radius: 200px 200px 200px 200px;
   -moz-border-radius: 200px 200px 200px 200px;
   -webkit-border-radius: 200px 200px 200px 200px;
-  border: 0px solid #000000;
+  border: 6px solid #f5f5f5;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 21px -3px rgba(0,0,0,0.35);
-  -moz-box-shadow: 0px 0px 21px -3px rgba(0,0,0,0.35);
-  box-shadow: 0px 0px 21px -3px rgba(0,0,0,0.35);
 }
 
 .form-group {
@@ -874,8 +863,10 @@ i.chevron-down {
   }
   .submit-button {
     border-radius: 0em;
-    background-color: #3E9FD7;
+    background-color: #469742;
     color: white !important;
+    padding: 1em 3em 1em 3em;
+    margin-top: 1em;
   }
 }
 
@@ -1000,7 +991,7 @@ p.verticaline {
 }
 
 .page-content.the-team-content {
-  margin-bottom: 5em;
+  margin-bottom: -3em;
 }
 
 .team-row {
@@ -1046,33 +1037,94 @@ p.verticaline {
     color: rgba(85, 85, 85, 0.83);
     text-align: justify;
     text-justify: inter-word;
-    color: #555;
+    color: white;
     font-weight: 300;
     font-size: 0.9em;
     padding: 2em;
   }
   
-  i {
+  i.signal {
     margin-top: 1em;
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     padding: 1.5em;
-    color: #154D94;
+    color: white;
     border: 1px solid #D2D2D2;
+    font-size: large;
     transition: 300ms ease-in-out;
 
     &:hover{
-      background-color: #154D94;
-      border: 1px solid #154D94;
+      background-color: #369ed8;
+      border: 1px solid #369ed8;
+      color: white;
+      padding: 1.5em;
+    }
+  }
+
+  i.users {
+    margin-top: 1em;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    padding: 1.5em;
+    color: white;
+    border: 1px solid #D2D2D2;
+    font-size: large;
+    transition: 300ms ease-in-out;
+
+    &:hover{
+      background-color: #7dc142;
+      border: 1px solid #7dc142;
+      color: white;
+      padding: 1.5em;
+    }
+  }
+
+  i.trophy {
+    margin-top: 1em;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    padding: 1.5em;
+    color: white;
+    border: 1px solid #D2D2D2;
+    font-size: large;
+    transition: 300ms ease-in-out;
+
+    &:hover{
+      background-color: #0276bc;
+      border: 1px solid #0276bc;
+      color: white;
+      padding: 1.5em;
+    }
+  }
+  .bullhorn {
+    margin-top: 1em;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    padding: 1.5em;
+    color: white;
+    border: 1px solid #D2D2D2;
+    font-size: large;
+    transition: 300ms ease-in-out;
+
+    &:hover{
+      background-color: #00a550;
+      border: 1px solid #00a550;
       color: white;
       padding: 1.5em;
     }
   }
 }
 
+.company-columns.bottom {
+  margin-bottom: 9em;
+}
+
 .company-content {
- /*TODO*/
+  background-color: #164a92;
 }
 
 .clients-content {
@@ -1130,8 +1182,17 @@ object.scroll-style {
   &:hover {
     -webkit-filter: none;
     filter: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   }
   img {
     width: 70%;
   }
+}
+
+b, strong {
+  font-weight: 400;
+}
+
+section#clientes {
+  margin-bottom: 3em;
 }

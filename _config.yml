@@ -9,6 +9,11 @@ baseurl: ""
 url: "http://www.mikroways.net"
 twitter_username: jekyllrb
 github_username:  jekyll
+social:
+  facebook: "https://facebook.com/mikroways"
+  github: "https://github.com/mikroways"
+  linkedin: "https://linkedin.com.ar"
+  twitter: "https://twiter.com/mikroways"
 
 # Build settings
 markdown: kramdown
