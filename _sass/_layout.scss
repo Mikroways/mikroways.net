@@ -16,8 +16,6 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-
-    &,
     &:visited {
         color: $grey-color-dark;
     }
@@ -179,15 +177,15 @@ h1.page-heading-company {
   text-align: center;
   font-size: 2em;
   font-weight: 100;
-  margin: 6em 0em 2em 0em;
-  color: white;
+  margin: 10% 0% 5% 0%;
+  color: #727477;
 }
 
 h1.page-heading {
   text-align: center;
   font-size: 2em;
   font-weight: 100;
-  margin: 6em 0em 2em 0em;
+  margin: 10% 0% 5% 0%;
   color: #727477;
 }
 
@@ -204,7 +202,7 @@ h1.page-heading-clients {
   text-align: center;
   font-size: 2em;
   font-weight: 100;
-  margin: 6em 0em 2.5em 0em;
+  margin: 10% 0% 5% 0%;
 }
 
 h1.page-heading-service {
@@ -212,7 +210,7 @@ h1.page-heading-service {
   text-align: center;
   font-size: 2em;
   font-weight: 100;
-  margin: 7em 0em 2.5em 0em;
+  margin: 10% 0% 5% 0%;
 }
 
 .post-list {
@@ -353,7 +351,7 @@ h1.page-heading-service {
   width: 100%;
   text-align: center;
   background:rgba(0,0,0,0);
-  margin-top: 1em;
+ 
 }
 
 .main-menu-index ul {
@@ -551,14 +549,14 @@ h1.page-heading-service {
 
 .chef-partner {
   margin-top: 0em;
-  /*background-color: #369ED8;*/
   background-color: white;
   padding: 3em 3em 3em 3em;
   text-align: center;
-  min-height: 400px;
-  max-height: 400px;
+  min-height: 425px;
+  max-height: 425px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   transition: 300ms ease-in-out;
+  /*border: solid 1em #ffffff;*/
   &:hover {
 
   }
@@ -566,14 +564,14 @@ h1.page-heading-service {
 
 .amazon-partner {
   margin-top: 0em;
-  /*background-color: #154D94;*/
   background-color: white;
   padding: 3em 3em 3em 3em;
   text-align: center;
-  min-height: 400px;
-  max-height: 400px;
+  min-height: 425px;
+  max-height: 425px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   transition: 300ms ease-in-out;
+  /*border: solid 1em #ffffff;*/
   &:hover {
    
   }
@@ -598,6 +596,14 @@ img.partnerships.chef{
 object.partnerships {
   width: 7em;
   height: 7em;
+}
+
+#alianzas {
+  background-color: #f2f2f2;
+}
+
+.all-partners {
+  margin-bottom: 10%;
 }
 
 .columns p {
@@ -824,7 +830,7 @@ i.chevron-down {
   margin-bottom: 1.5em;
   text-align: center;
   color: #555;
-  margin-top: 3em;
+  margin: 10% 0% 5% 0%;
 }
 
 .contact-data p {
@@ -837,12 +843,24 @@ i.chevron-down {
 .contact-data p i {
   color: #333333;
   margin-right: 1em;
-  padding: 1em;
+  padding: 1.5em;
   border-radius: 200px 200px 200px 200px;
   -moz-border-radius: 200px 200px 200px 200px;
   -webkit-border-radius: 200px 200px 200px 200px;
-  border: 6px solid #f5f5f5;
+  border: 1px solid #ccc;
   background-color: white;
+}
+
+.contact-data p i.phone {
+  color: #80c248;
+}
+
+.contact-data p i.envelope {
+  color: #00a550;
+}
+
+.contact-data p i.home {
+  color: #009A4A;
 }
 
 .form-group {
@@ -999,11 +1017,13 @@ p.verticaline {
 }
 
 .team-link img {
-  width: 40%;
-  -webkit-box-shadow: 0px 0px 22px -4px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 0px 22px -4px rgba(0,0,0,0.3);
-  box-shadow: 0px 0px 22px -4px rgba(0,0,0,0.3);
-  border: solid 0.5em rgb(246, 246, 246);
+  width: 60%;
+  -webkit-box-shadow: 0px 0px 22px -4px rgba(0, 0, 0, 0.3); 
+  -moz-box-shadow: 0px 0px 22px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.3);
+  border: solid 0.5em rgb(255, 255, 255);
+  padding: 0.1em;
+  background-color: #ffffff;
   &:hover {
 
   }
@@ -1037,28 +1057,28 @@ p.verticaline {
     color: rgba(85, 85, 85, 0.83);
     text-align: justify;
     text-justify: inter-word;
-    color: white;
+    color: #999;
     font-weight: 300;
     font-size: 0.9em;
     padding: 2em;
   }
   
   i.signal {
-    margin-top: 1em;
+    margin-top: 1.3em;
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     padding: 1.5em;
-    color: white;
-    border: 1px solid #D2D2D2;
     font-size: large;
     transition: 300ms ease-in-out;
-
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #369ed8;
     &:hover{
+      padding: 1.5em;
       background-color: #369ed8;
       border: 1px solid #369ed8;
       color: white;
-      padding: 1.5em;
     }
   }
 
@@ -1068,16 +1088,16 @@ p.verticaline {
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     padding: 1.5em;
-    color: white;
-    border: 1px solid #D2D2D2;
     font-size: large;
     transition: 300ms ease-in-out;
-
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #7dc142;
     &:hover{
+      padding: 1.5em;
       background-color: #7dc142;
       border: 1px solid #7dc142;
       color: white;
-      padding: 1.5em;
     }
   }
 
@@ -1087,44 +1107,47 @@ p.verticaline {
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     padding: 1.5em;
-    color: white;
-    border: 1px solid #D2D2D2;
     font-size: large;
     transition: 300ms ease-in-out;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #00a550;
 
     &:hover{
-      background-color: #0276bc;
-      border: 1px solid #0276bc;
-      color: white;
       padding: 1.5em;
+      background-color: #00a550;
+      border: 1px solid #00a550;
+      color: white;
     }
   }
-  .bullhorn {
+
+  i.bullhorn {
     margin-top: 1em;
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     padding: 1.5em;
-    color: white;
-    border: 1px solid #D2D2D2;
     font-size: large;
     transition: 300ms ease-in-out;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #0276bc;
 
     &:hover{
-      background-color: #00a550;
-      border: 1px solid #00a550;
-      color: white;
       padding: 1.5em;
+      background-color: #0276bc;
+      border: 1px solid #0276bc;
+      color: white;
     }
   }
 }
 
 .company-columns.bottom {
-  margin-bottom: 9em;
+  margin-bottom: 10%;
 }
 
 .company-content {
-  background-color: #164a92;
+  background-color: #f5f5f5;
 }
 
 .clients-content {
@@ -1164,24 +1187,19 @@ object.scroll-style {
 }
 
 .clients-brand {
-  padding: 2em 1.8em;
+  padding: 2.8em 0.8em;
   background: #f2f1ed;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   text-align: center;
-  margin: 0 0 3% 3%;
+  margin: 0 0 2% 2%;
   float: left;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   transition: 300ms ease-in-out;
-
   &:hover {
-    -webkit-filter: none;
-    filter: none;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   }
   img {
@@ -1189,10 +1207,72 @@ object.scroll-style {
   }
 }
 
+.brands {
+  margin-bottom: 10%;
+}
+
 b, strong {
   font-weight: 400;
 }
 
-section#clientes {
+/*section#clientes {
   margin-bottom: 3em;
+}*/
+
+.social-contact-team ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-flex;
+  li { 
+    float: left;
+    margin: 0.3em;
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 0.6em;      
+      i.facebook {
+        padding: 1em 1.1em;
+        border-radius: 200px 200px 200px 200px;
+        -moz-border-radius: 200px 200px 200px 200px;
+        -webkit-border-radius: 200px 200px 200px 200px;
+        border: 1px solid #ccc;
+        color: #369ed8;
+        &:hover {
+          background-color: #369ed8;
+          color: white;
+          border: 1px solid #369ed8;
+        }
+      }
+      i.linkedin {
+        padding: 1em;
+        border-radius: 200px 200px 200px 200px;
+        -moz-border-radius: 200px 200px 200px 200px;
+        -webkit-border-radius: 200px 200px 200px 200px;
+        border: 1px solid #ccc;
+        color: #0276bc;
+        &:hover {
+          background-color: #0276bc;
+          color: white;
+          border: 1px solid #0276bc;
+        }
+      }
+      i.github{
+        padding: 1em;
+        border-radius: 200px 200px 200px 200px;
+        -moz-border-radius: 200px 200px 200px 200px;
+        -webkit-border-radius: 200px 200px 200px 200px;
+        border: 1px solid #ccc;
+        color: #154d94;
+        &:hover {
+          background-color: #154d94;
+          color: white;
+          border: 1px solid #154d94;
+        }
+      }
+    }
+  }
 }
