@@ -381,6 +381,10 @@ h1.page-heading-service {
   margin-bottom: -8%;
 }
 
+object.logo-mikroways-blanco {
+  pointer-events: none;
+}
+
 .logo-mikroways-blanco {
   margin-bottom: -15%;
   margin-top: 5.5em;
@@ -852,14 +856,29 @@ i.chevron-down {
 
 .contact-data p i.phone {
   color: #80c248;
+  &:hover {
+    color: white;
+    background-color: #80c248;
+    border: 1px solid #80c248;
+  }
 }
 
 .contact-data p i.envelope {
   color: #00a550;
+  &:hover {
+    color: white;
+    background-color: #00a550;
+    border: 1px solid #00a550;
+  }
 }
 
 .contact-data p i.home {
   color: #009A4A;
+  &:hover {
+    color: white;
+    background-color: #009A4A;
+    border: 1px solid #009A4A;
+  }
 }
 
 .form-group {
@@ -881,9 +900,16 @@ i.chevron-down {
   .submit-button {
     border-radius: 0em;
     background-color: #469742;
-    color: white !important;
-    padding: 1em 3em 1em 3em;
+    color: white;
+    padding: 0.8em 2em;
     margin-top: 1em;
+    border: 2px solid #469742;
+    transition: 300ms ease-in-out;
+    &:hover {
+      background-color: #ECECEC;
+      color: #469742;
+      border: 2px solid #469742;
+    }
   }
 }
 
