@@ -1,21 +1,70 @@
  <!-- jQuery Version 1.11.0 -->
-    <script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+  <!-- Plugin JavaScript -->
+  <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
 
-    <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="{{ "/js/mikroways.js" | prepend: site.baseurl }}"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="{{ "/js/mikroways.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Formspree JS to use AJAX -->
-    <script src="{{ "/js/formspree.js" | prepend: site.baseurl }}"></script>
+  <!-- Formspree JS to use AJAX -->
+  <script src="{{ "/js/formspree.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Validation -->
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-    <script src="{{ "/js/jquery-validation-messages.js" | prepend: site.baseurl }}"></script>
+  <!-- Validation -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <script src="{{ "/js/jquery-validation-messages.js" | prepend: site.baseurl }}"></script>
 
+  <!-- Typed.js -->
+  <script src={{ "/js/typed.js" | prepend: site.baseurl }}></script>
+
+ <!--  <script>
+    $(function(){
+      $(".element").typed({
+        strings: ["MAKING THE "],
+        contentType: 'html' // or 'text'
+      });
+    });
+  </script>
+ -->
+<script>
+    $(function(){
+        $(".element").typed({
+            strings: ["MAKING THE", "COMPLEX SIMPLE", "MIKROWAYS"],
+            // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+            stringsElement: null,
+            // typing speed
+            typeSpeed: 0,
+            // time before typing starts
+            startDelay: 0,
+            // backspacing speed
+            backSpeed: 0,
+            // time before backspacing
+            backDelay: 500,
+            // loop
+            loop: false,
+            // false = infinite
+            loopCount: false,
+            // show cursor
+            showCursor: true,
+            // character for cursor
+            cursorChar: "|",
+            // attribute to type (null == text)
+            attr: null,
+            // either html or text
+            contentType: 'html',
+            // call when done callback function
+            callback: function() {},
+            // starting callback function before each string
+            preStringTyped: function() {},
+            //callback for every typed string
+            onStringTyped: function() {},
+            // callback for reset
+            resetCallback: function() {}
+        });
+    });
+</script>
