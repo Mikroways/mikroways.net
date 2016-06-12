@@ -2,20 +2,14 @@
 <html>
   {% include head.html %}
   <body>
-    {{ content }} <!-- Contenido del index -->
     {% include first_level_menu.html %}
     {% include header.html %}
-    <div class="page-content ">
-      <div class="wrapper ">
-        {% include services.html %}
-      </div>
-    </div>
+    {{ content }} <!-- Contenido del index -->
     <div class="fullscreen background">
       <div class="content-a">
         <div class="content-b">
-          <div class="page-content ">
-            <div class="wrapper ">
-            </div>
+          <div class="page-content">
+            {% include services.html %}
             {% include partnerships.html %}
             {% include clients.html %}
             {% include company.html %}

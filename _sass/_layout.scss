@@ -347,13 +347,6 @@ h1.page-heading-service {
   color: #222427;
 }
 
-.main-menu-index {
-  width: 100%;
-  text-align: center;
-  background:rgba(0,0,0,0);
- 
-}
-
 .main-menu-index ul {
   margin-bottom: 0em;
 }
@@ -387,8 +380,43 @@ object.logo-mikroways-blanco {
 
 .logo-mikroways-blanco {
   margin-bottom: -15%;
-  margin-top: 5.5em;
 }
+
+.logo-mikroways-blanco-footer {
+/*  margin-bottom: -15%;
+  margin-top: 5.5em;*/
+  display: block;
+  position: absolute;
+  top: 5.5em;
+  left: 0;
+  width: 7em; /* only required for <img /> */
+  z-index: -1000;
+}
+
+
+/**/
+.my-svg-container{
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  /*padding-bottom: 60%;  depends on svg ratio, for my zebra height/width = 1.2 so padding-bottom = 50% * 1.2 = 60% */
+  z-index: 1;
+  vertical-align: middle; /* do what you want */
+}
+
+.my-svg-container span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+/**/
+
+
+
+
 
 .service-row {
   margin-bottom: 5em;
@@ -704,11 +732,10 @@ h3.partner-title.amazon {
   top: 2em;
   background-image: url("/images/index-background.png");
   background-color: #0276BC;
-  width: initial;
+  /*width: initial;
   height: auto;
-  position: absolute;
+  position: absolute;*/
   background-size: cover;
-  /** z-index: -999; */
   z-index: 2;
 }
 
@@ -718,19 +745,19 @@ h3.partner-title.amazon {
 
 .fullscreen-index,
   .content-a {
-    width:100%;
-    height:100%;
-    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 .fullscreen-index.overflow,
 .fullscreen-index.overflow .content-a {
-    height:auto;
-    min-height:100%;
+    height: auto;
+    min-height: 100%;
 }
 
 /* content centering styles */
-.content-a.index-a {
-  display:table;
+/*.content-a.index-a {
+  display: table;
 }
 
 .content-b.index-b{
@@ -739,11 +766,11 @@ h3.partner-title.amazon {
   vertical-align: middle;
   top: 0em;
   text-align: center;
-}
+}*/
 
 
 .servicios {
-  margin-top: 50em;
+  /*margin-top: 50em;*/
   margin-bottom: 3em;
 }
 
@@ -755,8 +782,8 @@ h1.caption {
   line-height: 0.8em;
 }
 
-.wrapper.index  {
-  margin-top: -10em;
+.animated-text {
+  margin-top: 15%;
 }
 
 .wrapper.index p {
@@ -1176,6 +1203,9 @@ p.verticaline {
   background-color: #FDFDFD;
 }
 
+.scroll {
+  margin-bottom: 10%;
+}
 
 object.scroll-style {
   width: 3%;
