@@ -10,11 +10,11 @@
     $(window).scroll(function () {
       // set distance user needs to scroll before we fadeIn navbar
       if ($(this).scrollTop() > 180) {
-        $('.navbar').fadeIn();
+        $('.navbar').fadeIn(900);
         isNavBarShown = true;
 
       } else {
-        $('.navbar').fadeOut();
+        $('.navbar').fadeOut(900);
         isNavBarShown = false;
       }
     });
@@ -22,7 +22,7 @@
     /* Show navbar */
     $('#shownav').hover(function () {
       if (isNavBarShown) { return; }
-      $('.navbar').fadeIn();
+      $('.navbar').fadeIn(900);
     });
 
     /* when navbar is hovered over it will override previous */
@@ -31,7 +31,7 @@
       $('.navbar').show();
     }, function () {
       if (isNavBarShown) { return; }
-      $('.navbar').fadeOut();
+      $('.navbar').fadeOut(900);
     });
   });
 }(jQuery));
