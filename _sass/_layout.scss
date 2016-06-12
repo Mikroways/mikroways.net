@@ -1322,3 +1322,10 @@ b, strong {
   50% { opacity:0; }
   100% { opacity:1; }
 }
+
+.main-menu ul li a.nav-active {
+  border-bottom: 0.35em solid;
+  padding-bottom: 1em;
+  border-color: #002E56;
+  color: #222427;
+}
