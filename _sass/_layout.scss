@@ -384,45 +384,22 @@ object.logo-mikroways-blanco {
   pointer-events: none;
 }
 
+a.svg:after {
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+}
+
 .logo-mikroways-blanco {
   margin-bottom: -15%;
 }
 
 .logo-mikroways-blanco-footer {
-/*  margin-bottom: -15%;
-  margin-top: 5.5em;*/
-  display: block;
-  position: absolute;
-  top: 5.5em;
-  left: 0;
-  width: 7em; /* only required for <img /> */
-  z-index: -1000;
+  margin-top: 5.5em;
 }
-
-
-/**/
-.my-svg-container{
-  display: inline-block;
-  position: relative;
-  width: 50%;
-  /*padding-bottom: 60%;  depends on svg ratio, for my zebra height/width = 1.2 so padding-bottom = 50% * 1.2 = 60% */
-  z-index: 1;
-  vertical-align: middle; /* do what you want */
-}
-
-.my-svg-container span{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-}
-/**/
-
-
-
-
 
 .service-row {
   margin-bottom: 5em;
