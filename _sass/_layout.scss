@@ -347,6 +347,12 @@ h1.page-heading-service {
   color: #222427;
 }
 
+.main-menu-index {
+  width: 100%;
+  text-align: center;
+  background:rgba(0,0,0,0); 
+}
+
 .main-menu-index ul {
   margin-bottom: 0em;
 }
@@ -708,7 +714,7 @@ h3.partner-title.amazon {
 /* content centering styles */
 .content-a {
   display:table;
-  margin-bottom: 10em;
+  margin-bottom: 3em;
 }
 
 .content-b {
@@ -729,12 +735,11 @@ h3.partner-title.amazon {
 .background-index {
   background-repeat: no-repeat;
   background-position: 50% 30% !important;
-  top: 2em;
   background-image: url("/images/index-background.png");
   background-color: #0276BC;
-  /*width: initial;
+  width: initial;
   height: auto;
-  position: absolute;*/
+  position: relative;
   background-size: cover;
   z-index: 2;
 }
@@ -766,8 +771,8 @@ h3.partner-title.amazon {
   vertical-align: middle;
   top: 0em;
   text-align: center;
-}*/
-
+}
+*/
 
 .servicios {
   /*margin-top: 50em;*/
@@ -1351,4 +1356,11 @@ b, strong {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
+}
+
+.main-menu ul li a.nav-active {
+  border-bottom: 0.35em solid;
+  padding-bottom: 1em;
+  border-color: #002E56;
+  color: #222427;
 }
