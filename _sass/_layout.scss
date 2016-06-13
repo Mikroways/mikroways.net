@@ -384,6 +384,16 @@ object.logo-mikroways-blanco {
   pointer-events: none;
 }
 
+
+a.svg1:after {
+  content: ""; 
+  position: relative; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+}
+
 a.svg:after {
   content: ""; 
   position: absolute; 
