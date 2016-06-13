@@ -61,7 +61,7 @@ $(document).ready(function(){
   for (var i=0; i < aChildren.length; i++) {    
     var aChild = aChildren[i];
     var ahref = $(aChild).attr('href');
-    if ($(ahref).selector != "#home") {
+    if ($($(aChild).attr('id')).selector != "logo-mikroways-superior") {
       aArray.push(ahref);
     }
   } // this for loop fills the aArray with attribute href values
