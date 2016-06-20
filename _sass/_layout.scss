@@ -772,6 +772,16 @@ h1.caption {
   text-align: center;
   font-size: 4em;
   line-height: 0.8em;
+  text-transform: uppercase;
+}
+
+h1.slogan {
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.2em;
+  text-transform: lowercase;
 }
 
 .animated-text {
@@ -1061,7 +1071,7 @@ p.verticaline {
 }
 
 .team-link img {
-  width: 68%;
+  width: 11em;
   border: solid 0.7em #eee;
   background-color: #ffffff;
   transition: 300ms ease-in-out;
