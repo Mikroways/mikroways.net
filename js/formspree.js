@@ -4,7 +4,7 @@ $contactForm.submit(function(e) {
   e.preventDefault();
   if(! $contactForm.valid()) return false;
   $.ajax({
-    url: '//formspree.io/' + 'test' + '@' + 'mikroways' + '.' + 'net',
+    url: '//formspree.io/' + 'contacto' + '@' + 'mikroways' + '.' + 'net',
     method: 'POST',
     data: $(this).serialize(),
     dataType: 'json',
@@ -15,7 +15,7 @@ $contactForm.submit(function(e) {
     },
     success: function(data) {
       $contactFormGlobal.find('.alert-info').hide();
-      $('<div class="alert alert-success">¡Gracias por tu contactarnos! Responderemos tu mensaje en breve.</div>').insertBefore("#contact-form");
+      $('<div class="alert alert-success">¡Gracias por contactarnos! Responderemos tu mensaje en breve.</div>').insertBefore("#contact-form");
     },
     error: function(err) {
       $contactFormGlobal.find('.alert-info').hide();
