@@ -1,0 +1,61 @@
+html:
+  lang: en
+
+menu:
+  blog: Blog
+  clients: clients
+  company: the company
+  contact: Contact
+  partnerships: partnerships
+  services: services
+
+common_words:
+  our_female: our
+  our_male: our
+  objectives: objectives
+
+homepage:
+  slogan: revolutioning solutions
+  more: Know more
+  contact_us: Contact us!
+
+services:
+  cloud_computing:
+    name: cloud computing
+    short: The access to elastic computational resources enable organizations to get the necessary infraestructure at any moment, optimizing costs and reducing efforts regarding the management of their IT infraestructure.
+  consultancy:
+    name: consultancy
+    short: Issuing a detailed analysis on each specific case, we manage to design and implement professional solutions made to measure of our clients.
+  devops:
+    name: devops
+    short: By applying agile methodologies in IT, we intend to standarize and automatize processes in order to deliver high quality solutions, increasing productivity and reducing costs and response times.
+  outsourcing:
+    name: outsourcing
+    short: Our clients manage to strengthen their own bussiness by concentrating their efforts on it, trusting the management of their IT infraestructure to the team of professionals at Mikroways.
+  monitoring:
+    name: smart monitoring
+    short: Using a system to collect data to generate statistics and with the definition of metrics to monitor and alert on, Mikroways helps its clients to take informed choices and to act proactively in order to avoid potencial issues.
+  training:
+    name: training
+    short: Mikroways provides training services to IT professionals with the possibility to adapt each course to the client specific requirements.
+
+partnerships:
+  chef: We are the first one and the only company in Argentina to have commercial representation of Chef, an enterprise that has establised as leader in the automatized infraestructure management segment. With that partnership, we have Chef support to implement our implementations and their approval to reproduce its courses in Spanish.
+  aws: With AWS, Amazon has established as the par excellence company regarding cloud computing services and constitutes and economic, stable and scalable platform, ideal for growing organization and for those that do not want to face the costs and compexity of managing its own infraestructure.
+
+company:
+  objectives:
+    first: Make sure that the IT infraestructure of our clients <b>works correctly</b> in the present and that, at the same time, has the <b>capacity to evolve</b> to cope with the future necessities, helping the organization to grow.
+    second: To <b>generate confidence</b> and human links with our clients, that allows us to develop an harmonious <b>team work</b>, enabling the establishment of relations which perdure afert our job is finished.
+      pudiendo establecer relaciones que perduren una vez finalizadas nuestras tareas.
+    third: We want our company to be known by the <b>quality</b> and the <b>compliance</b> of its works.
+    fourth: Being able to acquire new clients based on <b>recommendations</b> and <b>succesful cases.</b>
+  who_are_we: who <b>are we?</b>
+
+contact_form:
+  name: Name
+  surname: Surname
+  email: Email
+  phone: Phone
+  leave_comment: Leave us your comment!
+  submit: Submit

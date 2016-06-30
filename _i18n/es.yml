@@ -1,0 +1,61 @@
+html:
+  lang: es
+
+menu:
+  blog: Blog
+  clients: clientes
+  company: la empresa
+  contact: Contacto
+  our: nuestros
+  partnerships: alianzas
+  services: servicios
+
+homepage:
+  slogan: soluciones que revolucionan
+  more: Saber más
+  contact_us: ¡Contactanos!
+
+common_words:
+  our_female: nuestras
+  our_male: nuestros
+  objectives: objetivos
+
+services:
+  cloud_computing:
+    name: computación en la nube
+    short: El acceso a recursos de computación de forma elástica, permite a las organizaciones contar con la infraestructura necesaria en todo momento, optimizando costos y reduciendo los esfuerzos en la gestión de su infraestructura.
+  consultancy:
+    name: consultoría
+    short: Por medio de un análisis detallado de cada caso específico, logramos diseñar e implementar soluciones profesionales a la medida de nuestros clientes.
+  devops:
+    name: devops
+    short: Aplicando metodologías ágiles en TI, buscamos estandarizar y automatizar procesos para brindar soluciones de alta calidad, aumentando la productividad y reduciendo costos y tiempos de respuesta.
+  outsourcing:
+    name: outsourcing
+    short: Nuestros clientes logran potenciar su propio negocio al concentrar sus esfuerzos en el mismo, confiando la gestión de su infraestructura de TI al equipo de profesionales de Mikroways.
+  monitoring:
+    name: monitoreo inteligente
+    short: Mediante un sistema de alertas tempranas y con la recolección de estadísticas y generación de métricas, Mikroways ayuda a que sus clientes puedan tomar decisiones informadas y actuar de forma proactiva para evitar potenciales problemas.
+  training:
+    name: capacitación
+    short: Mikroways provee servicios de capacitación para personal de sistemas en todos los ámbitos que desarrolla, pudiendo adaptar cada curso según las necesidades particulares.
+
+partnerships:
+  aws: Con AWS, Amazon se ha transformado en la compañía por excelencia en lo que respecta a servicios de computación en la nube y constituye una plataforma económica, estable y escalable, ideal para organizaciones en crecimiento o que no quieran afrontar los costos y la complejidad de mantener una infraestructura propia.
+  chef: Somos la primer y única empresa Argentina en tener la representación de Chef, una compañía que ha sabido establecerse como líder en el segmento de la gestión automatizada de la infraestructura. Por medio de esta alianza, contamos con el respaldo de Chef para realizar nuestras implementaciones y con el aval para dictar sus cursos en español.
+
+company:
+  objectives:
+    first: Lograr que la infraestructura de TI de nuestros clientes <b>funcione correctamente</b> en el presente y que, a su vez, tenga la <b>capacidad de adaptarse</b> a las necesidades futuras, acompañando el crecimiento de la organización.
+    second: <b>Generar vínculos</b> humanos y de confianza con nuestros clientes, que nos permitan <b>trabajar de forma conjunta</b> y armoniosa, pudiendo establecer relaciones que perduren una vez finalizadas nuestras tareas.
+    third: Que nuestra empresa sea conocida por la <b>calidad</b> y el <b>cumplimiento</b> de sus trabajos.
+    fourth: Poder captar nuevos clientes en base a <b>recomendaciones</b> y casos de éxito <b>demostrables.</b>
+  who_are_we: ¿quiénes <b>somos?</b>
+
+contact_form:
+  name: Nombre
+  surname: Apellido
+  email: Correo electrónico
+  phone: Teléfono
+  leave_comment: ¡Dejanos tu comentario!
+  submit: Enviar

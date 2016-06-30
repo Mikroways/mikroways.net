@@ -17,3 +17,5 @@ social:
 
 # Build settings
 markdown: kramdown
+
+languages: ["es", "en"]
