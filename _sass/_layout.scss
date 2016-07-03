@@ -170,7 +170,15 @@
 }
 
 .page-heading {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 h1.page-heading-company {
@@ -338,6 +346,7 @@ h1.page-heading-service {
   padding: 1.2em 01em 1.4em 1em;
   color: #717274;
   font-size: 0.9em;
+  text-transform: uppercase;
 }
 
 .main-menu ul li.menu-item a:hover {
@@ -374,6 +383,7 @@ h1.page-heading-service {
   &:hover{
     color: rgba(255, 255, 255, 0.38)
   }
+  text-transform: uppercase;
 }
 
 .logo-mikroways {
@@ -944,6 +954,7 @@ i.chevron-down {
 
 .footer-icons {
   margin-top: 6em;
+  width: 23%;
 }
 
 .footer-icons ul {
@@ -1001,6 +1012,9 @@ p.verticaline {
   margin-top: 0em;
 }
 
+.footer-menu-service.footer-menu {
+  width: 43%;
+}
 
 .footer-menu-service ul {
   list-style: none;
@@ -1023,6 +1037,7 @@ p.verticaline {
   &:hover {
     color: rgba(255, 255, 255, 0.47);
   }
+  text-transform: uppercase;
 }
 
 .footer-contact-data {
