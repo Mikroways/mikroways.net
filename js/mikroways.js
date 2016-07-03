@@ -94,6 +94,13 @@ $(document).ready(function(){
 
 // Typing effect.
 $(function(){
+  var slogan;
+//  if (document.documentElement.lang == "es") {
+//    slogan = "soluciones que revolucionan";
+//  } else {
+//    slogan = "revolutioning solutions";
+//  }
+
   $(".element").typed({
     strings: ["soluciones que revolucionan"],
     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)

@@ -170,7 +170,15 @@
 }
 
 .page-heading {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 h1.page-heading-company {
@@ -338,6 +346,7 @@ h1.page-heading-service {
   padding: 1.2em 01em 1.4em 1em;
   color: #717274;
   font-size: 0.9em;
+  text-transform: uppercase;
 }
 
 .main-menu ul li.menu-item a:hover {
@@ -374,6 +383,7 @@ h1.page-heading-service {
   &:hover{
     color: rgba(255, 255, 255, 0.38)
   }
+  text-transform: uppercase;
 }
 
 .logo-mikroways {
@@ -1023,6 +1033,7 @@ p.verticaline {
   &:hover {
     color: rgba(255, 255, 255, 0.47);
   }
+  text-transform: uppercase;
 }
 
 .footer-contact-data {

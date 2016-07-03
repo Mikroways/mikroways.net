@@ -2,7 +2,7 @@
 	<div class="col-md-12" id="contact-us">
 		<div class="wrapper ">
 			<div class="contact-box">
-				<h1 class="title"> ¡CONTACTANOS! </h1>
+        <h1 class="title"> {% t homepage.contact_us %} </h1>
 				<div class="row contact-data">
 					<div class="col-md-4">
 						<p><i class="fa fa-volume-control-phone phone" aria-hidden="true"></i> + 54.221.447.3084</p>
@@ -19,29 +19,29 @@
             <fieldset>
               <div class="row form-group">
                 <div class="col-md-6">
-                  <input class="form-control" type="text" name="name" placeholder="Nombre *" required>
+                  <input class="form-control" type="text" name="name" placeholder="{% t contact_form.name %} *" required>
                 </div>
                 <div class="col-md-6">
-                  <input class="form-control" type="text" name="surname" placeholder="Apellido *" required>
+                  <input class="form-control" type="text" name="surname" placeholder="{% t contact_form.surname %} *" required>
                 </div>
               </div>
               <div class="row form-group">
                 <div class="col-md-6">
-                  <input class="form-control" type="email" name="_replyto" placeholder="Email *" required>
+                  <input class="form-control" type="email" name="_replyto" placeholder="{% t contact_form.email %} *" required>
                 </div>
                 <div class="col-md-6">
-                  <input class="form-control" type="text" name="phone" placeholder="Teléfono">
+                  <input class="form-control" type="text" name="phone" placeholder="{% t contact_form.phone %}">
                 </div>
               </div>
               <div class="row form-group">
                 <div class="col-md-12">
-                  <textarea class="form-control" rows="7" id="comment" type="text" name="comment" placeholder="¡Dejanos tu comentario! *" required></textarea>
+                  <textarea class="form-control" rows="7" id="comment" type="text" name="comment" placeholder="{% t contact_form.leave_comment %} *" required></textarea>
                 </div>
               </div>
               <input type="text" name="_gotcha" style="display:none" />
               <div class="row form-group">
                 <div class="col-md-12">
-                  <button type="submit" class="btn btn-lg btn-succes submit-button">Enviar</button>
+                  <button type="submit" class="btn btn-lg btn-succes submit-button">{% t contact_form.submit %}</button>
                 </div>
               </div>
             </fieldset>
