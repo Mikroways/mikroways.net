@@ -11,7 +11,6 @@ menu:
   services: servicios
 
 homepage:
-  slogan: soluciones que revolucionan
   more: Saber más
   contact_us: ¡Contactanos!
 
@@ -35,7 +34,7 @@ services:
     short: Nuestros clientes logran potenciar su propio negocio al concentrar sus esfuerzos en el mismo, confiando la gestión de su infraestructura de TI al equipo de profesionales de Mikroways.
   monitoring:
     name: monitoreo inteligente
-    short: Mediante un sistema de alertas tempranas y con la recolección de estadísticas y generación de métricas, Mikroways ayuda a que sus clientes puedan tomar decisiones informadas y actuar de forma proactiva para evitar potenciales problemas.
+    short: Con la recolección de datos estadísticos y la definición de métricas, Mikroways ayuda a que sus clientes puedan tomar decisiones informadas, al tiempo que logra implementar un sistema de a     lertas tempranas que permita actuar de forma proactiva, evitando problemas potenciales.
   training:
     name: capacitación
     short: Mikroways provee servicios de capacitación para personal de sistemas en todos los ámbitos que desarrolla, pudiendo adaptar cada curso según las necesidades particulares.
