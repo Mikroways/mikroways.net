@@ -1,58 +1,79 @@
 <section id="contacto">
-	<div class="col-md-12" id="contact-us">
-		<div class="wrapper ">
-			<div class="contact-box">
-        <h1 class="title"> {% t homepage.contact_us %} </h1>
-				<div class="row contact-data">
-					<div class="col-md-4">
-						<p><i class="fa fa-volume-control-phone phone" aria-hidden="true"></i> + 54.221.447.3084</p>
-					</div>
-					<div class="col-md-4">
-						<p class="verticaline"><i class="fa fa-envelope envelope" aria-hidden="true"></i> contacto@mikroways.net</p>	
-					</div>
-					<div class="col-md-4">
-						<p class="verticaline"><i class="fa fa-home home" aria-hidden="true"></i> Calle 9 #562 2A</p>
-					</div>
-				</div>
-        <div id="contact-form-global">
-          <form id="contact-form" class="form-horizontal">
-            <fieldset>
-              <div class="row form-group">
-                <div class="col-md-6">
-                  <input class="form-control" type="text" name="name" placeholder="{% t contact_form.name %} *" required>
-                </div>
-                <div class="col-md-6">
-                  <input class="form-control" type="text" name="surname" placeholder="{% t contact_form.surname %} *" required>
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-6">
-                  <input class="form-control" type="email" name="_replyto" placeholder="{% t contact_form.email %} *" required>
-                </div>
-                <div class="col-md-6">
-                  <input class="form-control" type="text" name="phone" placeholder="{% t contact_form.phone %}">
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <textarea class="form-control" rows="7" id="comment" type="text" name="comment" placeholder="{% t contact_form.leave_comment %} *" required></textarea>
-                </div>
-              </div>
-              <input type="text" name="_gotcha" style="display:none" />
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <button type="submit" class="btn btn-lg btn-succes submit-button">{% t contact_form.submit %}</button>
-                </div>
-              </div>
-            </fieldset>
-          </form>
+  <div class="col-md-12" id="contact-us">
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-md-12 contact-box">
+          <span><h1 class="title"> {% t homepage.contact_us %} </h1></span>
         </div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="map-style col-md-12">
-        <div class="map-overlay" onClick="style.pointerEvents='none'"></div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.7810887304313!2d-57.960375984726426!3d-34.91194278038074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e635857be349%3A0x38f59903da336f5d!2sMikroways!5e0!3m2!1sen!2sar!4v1464186689145" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-	</section>
+      </div>
+      <div class="row">
+        <div class="contact-data">
+          <div class="col-md-4 col-xs-12">
+            <p><i class="fa fa-volume-control-phone phone" aria-hidden="true"></i> + 54.221.447.3084</p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <p class=""><i class="fa fa-envelope envelope" aria-hidden="true"></i> contacto@mikroways.net</p> 
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <p class=""><i class="fa fa-home home" aria-hidden="true"></i> Calle 9 #562 2A</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="contact-form-global">
+            <form id="contact-form" class="form-horizontal">
+              <fieldset>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <div class="col-md-6 col-xs-12">
+                      <input class="form-control" type="text" name="name" placeholder="{% t contact_form.name %} *" required>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                      <input class="form-control" type="text" name="surname" placeholder="{% t contact_form.surname %} *" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <div class="col-md-6 col-xs-12">
+                      <input class="form-control" type="email" name="_replyto" placeholder="{% t contact_form.email %} *" required>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                      <input class="form-control" type="text" name="phone" placeholder="{% t contact_form.phone %}">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <div class="col-md-12 col-xs-12">
+                      <textarea class="form-control" rows="7" id="comment" type="text" name="comment" placeholder="{% t contact_form.leave_comment %} *" required></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                     <input type="text" name="_gotcha" style="display:none" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <div class="col-md-12 col-xs-12">
+                      <button type="submit" class="btn btn-lg btn-succes submit-button">{% t contact_form.submit %}</button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="map-style col-md-12 col-xs-12">
+      <div class="map-overlay" onClick="style.pointerEvents='none'"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.7810887304313!2d-57.960375984726426!3d-34.91194278038074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e635857be349%3A0x38f59903da336f5d!2sMikroways!5e0!3m2!1sen!2sar!4v1464186689145" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>

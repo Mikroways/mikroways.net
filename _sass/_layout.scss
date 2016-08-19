@@ -386,6 +386,23 @@ h1.page-heading-service {
   text-transform: uppercase;
 }
 
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+/*
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 10px 26px 4px 26px;
+  font-size: 18px;
+  line-height: 20px;
+}
+*/
 .logo-mikroways {
   margin-bottom: -8%;
 }
@@ -462,11 +479,11 @@ a.svg:after {
 }
 
 .service i.monitoreo {
-  color: #00A550;
+  color: #1BB14B;
 }
 
 .service i.capacitacion {
-  color: #009A4A;
+  color: #008A49;
 }
 
 .service h2 {
@@ -481,6 +498,7 @@ a.svg:after {
 
 .service h2.computacion {
   color: #0276BC;
+  padding-left: 0em;
 }
 
 .service h2.consultoria {
@@ -492,11 +510,11 @@ a.svg:after {
 }
 
 .service h2.monitoreo {
-  color: #00A550;
+  color: #1BB14B;
 }
 
 .service h2.capacitacion {
-  color: #009A4A;
+  color: #008A49;
 }
 
 .service p {
@@ -508,6 +526,7 @@ a.svg:after {
   padding-right: 1.5em;
   min-height: 10em;
   max-height: 10em;
+  padding-left: 0em;
 }
 
 .service a {
@@ -579,7 +598,7 @@ a.svg:after {
   float: left;
   width: 28em;
   height: 28em;
-  margin: 1em;
+  margin: 0.5em;
 }
 
 .chef-partner {
@@ -786,10 +805,10 @@ h1.caption {
 }
 
 h1.slogan {
-  font-weight: 500;
+  font-weight: 100;
   color: white;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1.2em;
   text-transform: lowercase;
 }
@@ -903,20 +922,20 @@ i.chevron-down {
 }
 
 .contact-data p i.envelope {
-  color: #00a550;
+  color: #1BB14B;
   &:hover {
     color: white;
-    background-color: #00a550;
-    border: 1px solid #00a550;
+    background-color: #1BB14B;
+    border: 1px solid #1BB14B;
   }
 }
 
 .contact-data p i.home {
-  color: #009A4A;
+  color: #008A49;
   &:hover {
     color: white;
-    background-color: #009A4A;
-    border: 1px solid #009A4A;
+    background-color: #008A49;
+    border: 1px solid #008A49;
   }
 }
 
@@ -1376,3 +1395,164 @@ b, strong {
   border-color: #002E56;
   color: #222427;
 }
+
+
+/* Responsive rules */
+
+@media only screen and (max-width: 300px) {
+  h1.caption {
+    font-weight: 700;
+    color: red;
+    text-align: center;
+    font-size: 2em;
+    line-height: 0.8em;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* navbar menu */
+
+  .main-menu ul li a {
+    display: table;
+    padding: 0;
+  }
+
+  .main-menu ul li a.nav-active {
+    border-bottom: 0.2em solid;
+  }
+  .main-menu ul li.menu-item a:hover {
+    border-bottom: 0.2em solid;
+  }
+  
+  .main-menu {
+    padding-left: 0;
+  }
+
+  .main-menu ul li {
+    display: initial;
+  }
+
+  /* Index */
+  h1.caption {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 0.8em;
+    text-transform: uppercase;
+  }
+  
+  h1.slogan {
+    font-size: 1.9em;
+  }
+
+  .wrapper.index p {
+    margin-top: 1.5em;
+  }
+
+  .wrapper.index p a {
+    margin-right: 0; 
+  }
+
+  .btn {
+    font-size: 0.8em;
+    padding: 1em;
+  }
+
+  /* Services*/
+
+  h1.page-heading-service {
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  .service p {
+    padding-right: 0em;
+    padding-left: 0em;
+    min-height: 10em;
+    max-height: 16em;
+  }
+
+  .service-row {
+    margin-bottom: 0em; 
+  }
+  
+  .service {
+    margin-bottom: 2em;
+  }
+
+  .service h2.computacion {
+    padding-left: 0em;
+  }
+
+  /* Partnership */
+  h1.page-heading {
+    text-align: center;
+    font-size: 2.5em;
+    padding-left: 15px;
+  }
+
+  .partners {
+    margin: 0em;
+    width:auto;
+    height:auto;
+  }
+  .amazon-partner {
+    padding: 1em;
+    min-height: auto;
+    max-height: 30em;
+    margin-top: 1.5em;
+  }
+
+  .chef-partner {
+    padding: 2em;
+    min-height: 3em;
+    max-height: 30em;
+  }
+
+  /* Contact */
+
+  .contact-box {
+    padding: 0em;
+  }
+
+  .contact-box h1.title {
+    font-size: 2em;
+  }
+
+  .form-control {
+    height: auto;
+  }
+
+  /* Footer */
+
+  .footer-icons ul li {
+    margin-right: 0; 
+    /*OJO ESTO!*/
+  }
+
+  .site-footer {
+    padding: 0;
+  }
+
+  .contact-data p i {
+    margin-right: 0;
+    padding: 1em;
+    vertical-align: middle;
+  }
+
+  .contact-data p {
+    padding: 0;
+    text-align: left;
+    margin-bottom: 2em;
+    color: rgba(51, 51, 51, 0.81);
+    margin-top: 1em;
+  }
+
+  /* Clients */
+  .clients-brand {
+    padding: 2.8em 2em;
+  }
+}
+

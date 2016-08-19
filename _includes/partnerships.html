@@ -1,28 +1,32 @@
 <section id="alianzas"> <!-- Ancla para navegar por la web -->
   <div class="alianzas">
     <div class="row">
-      <div class="wrapper ">
-        <h1 class="page-heading">{% t common_words.our_female %} <b>{% t menu.partnerships %}</b></h1>
+      <div class="col-md-12 col-xs-12">
+        <span><h1 class="page-heading">{% t common_words.our_female %} <b>{% t menu.partnerships %}</b></h1></span>
         <div class="row">
-          <div class="col-md-10 col-md-offset-1 all-partners">
-            <div class="chef-partner partners">
-              <div class="row">
+          <div class="wrapper">
+            <div class="col-md-10 col-md-offset-1 col-xs-12 all-partners">
+
+              <div class="chef-partner partners col-xs-12">
+                <div class="row">
+                  <div class="partnerships-logo">
+                    <img src="/images/pic-chef-logo.png" alt="Chef" class="partnerships chef">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="columns">
+                    <p> {% t partnerships.chef %} </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="amazon-partner partners col-xs-12">
                 <div class="partnerships-logo">
-                  <img src="/images/pic-chef-logo.png" alt="Chef" class="partnerships chef">
+                  <img src="/images/amazon_web_services.png" alt="Amazon Web Service" class="partnerships amazon">
                 </div>
-              </div>
-              <div class="row">
                 <div class="columns">
-                  <p> {% t partnerships.chef %} </p>
+                  <p> {% t partnerships.aws %} </p>
                 </div>
-              </div>
-            </div>
-            <div class="amazon-partner partners">
-              <div class="partnerships-logo">
-                <img src="/images/amazon_web_services.png" alt="Amazon Web Service" class="partnerships amazon">
-              </div>
-              <div class="columns">
-                <p> {% t partnerships.aws %} </p>
               </div>
             </div>
           </div>

@@ -8,17 +8,17 @@ layout: default
       <nav class="col-md-12 text-center" data-offset-top="38">
         <div class="main-menu-index">
           <ul>
-            <li class="menu-item"><a href="#servicios">{% t menu.services %}</a></li>
-            <li class="menu-item"><a href="#alianzas">{% t menu.partnerships %}</a></li>
-            <li>
+            <li class="menu-item hidden-sm hidden-xs"><a href="#servicios">{% t menu.services %}</a></li>
+            <li class="menu-item hidden-sm hidden-xs"><a href="#alianzas">{% t menu.partnerships %}</a></li>
+            <li class="hidden-xs">
               <a>
                 <object class="logo-mikroways-blanco" data="/images/mikroways-blanco.svg" type="image/svg+xml">
                   <img src="/images/mikroways-blanco.png" alt="Mikroways">
                 </object>
               </a>
             </li>
-            <li class="menu-item"><a href="#clientes">{% t menu.clients %}</a></li>
-            <li class="menu-item"><a href="#empresa">{% t menu.company %}</a></li>
+            <li class="menu-item hidden-sm hidden-xs"><a href="#clientes">{% t menu.clients %}</a></li>
+            <li class="menu-item hidden-sm hidden-xs"><a href="#empresa">{% t menu.company %}</a></li>
           </ul>
         </div>
       </nav>
@@ -36,13 +36,15 @@ layout: default
                 </div>
               </div>
               <div class="row">
-                <p>
-                  <a href="#servicios" class="btn btn-default btn-lg know-more" role="button">{% t homepage.more %}</a>
-                  <a href="#contacto" class="btn btn-default btn-lg contact-us" role="button">{% t homepage.contact_us %}</a>
-                </p>
+                <div class="col-md-12">
+                  <p>
+                    <a href="#servicios" class="btn btn-default btn-lg know-more" role="button">{% t homepage.more %}</a>
+                    <a href="#contacto" class="btn btn-default btn-lg contact-us" role="button">{% t homepage.contact_us %}</a>
+                  </p>
+                </div>
               </div>
               <div class="row">
-                <div class="col-md-10 col-md-offset-1 scroll">
+                <div class="col-md-10 col-md-offset-1 scroll hidden-xs">
                   <object class="scroll-style" data="/images/scroll.svg" type="image/svg+xml"></object>
                 </div>
               </div>
