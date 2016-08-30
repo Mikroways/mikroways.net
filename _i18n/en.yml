@@ -39,9 +39,9 @@ services:
     short: Mikroways provides training services to IT professionals from its different developed fields, adapting each course to the client’s specific requirements.
 
 partnerships:
-  chef: We are the first and only one company in Argentina to have commercial representation of Chef, an enterprise that established as leader in the automatized infrastructure management segment. With that partnership, we have the backing of Chef to make our implementations and we also count with their approval to give its courses in Spanish.
   aws: With AWS, Amazon has established as the par excellence company regarding cloud computing services and constitutes and economic, stable and scalable platform, ideal for growing organizations and for those who do not want to face the costs and complexity of managing its own infrastructure.
-
+  chef: We are the first and only one company in Argentina to have commercial representation of Chef, an enterprise that established as leader in the automatized infrastructure management segment. With that partnership, we have the backing of Chef to make our implementations and we also count with their approval to give its courses in Spanish.
+  docker: Docker has revolutionized the way we think about operating systems and applications deployment and delivery. Leveraging its advantages, at Mikroways we have incorporated that technology into our solutions and established a partnership with Docker that simplifies the information flow and allows us to provide higher quality results.
 
 company:
   objectives:
