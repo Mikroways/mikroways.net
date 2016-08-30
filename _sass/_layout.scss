@@ -754,7 +754,6 @@ a.svg:after {
 }
 
 .chef-partner {
-  margin-top: 0em;
   background-color: white;
   padding: 4em;
   text-align: center;
@@ -768,21 +767,15 @@ a.svg:after {
 }
 
 .docker-partner {
-  padding: 2em;
-  min-height: 3em;
-  max-height: 30em;
-  margin-top: 0em;
+  min-height: 26.5em;
+  max-height: 26.7em;
   background-color: white;
   padding: 4em;
   text-align: center;
-
-  /*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);*/
   transition: 300ms ease-in-out;
-  margin-top: 0.5em;
 }
 
 .amazon-partner {
-  margin-top: 0em;
   background-color: white;
   padding: 4em;
   text-align: center;
@@ -812,7 +805,8 @@ img.partnerships.chef{
 }
 
 img.partnerships.docker {
-  width: 60%;
+  width: 44%;
+  margin-bottom: 0.7em;
 }
 
 
@@ -1683,7 +1677,6 @@ b, strong {
   }
 
   .docker-partner {
-    padding: 2em;
     min-height: 3em;
     max-height: 30em;
   }
