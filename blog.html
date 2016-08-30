@@ -1,0 +1,18 @@
+---
+layout: blog_default
+---
+
+<div class="container blog-container">
+  <div class="row">
+    <div class="col-md-12">
+      
+      {% for post in site.posts %}
+      <div class="post-list">
+          <div class="col-md-4">
+            {% include post.html %}
+          </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

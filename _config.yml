@@ -19,3 +19,5 @@ social:
 markdown: kramdown
 
 languages: ["es", "en"]
+
+include: ['_posts']
