@@ -90,10 +90,50 @@
 }
 
 
-.container.blog-container {
-  margin-top: 3em;
+/* Blog Header */
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-blog {
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(102, 102, 102, 0.2)!important;;
+  -moz-box-shadow: 0px 6px 5px 0px rgba(102, 102, 102, 0.2)!important;;
+  box-shadow: 0px 6px 5px 0px rgba(102, 102, 102, 0.2) !important;;
 }
 
+.navbar-blog {
+  background-color: #369ed8;
+
+  button.navbar-toggle {
+    border: solid 2px white;
+    background-color: #3088b9;
+    color: white;
+    .icon-bar {
+      background-color: white!important;
+    }
+  }
+
+  ul {
+    li {
+      padding: 1em;
+      text-align: center!important;
+      background-color: #369ed8!important;
+      
+      a {
+        color: white!important;
+        &:hover {
+          background-color: #3088b9!important;
+        }
+      }
+    }
+  }
+}
+.container-fluid {
+  .navbar-header {
+    padding: 1em;
+  }
+}
+
+.blog-container {
+  margin-top: 4em;
+}
 
 /**
  * Site footer
@@ -329,10 +369,11 @@ h1.page-heading-service {
 /* BLOG */
 
 .navbar-default {
-  border: none;
+/*  border: none;
   height: 4.5em;
-  background: #1b39a8;
+  background: #0477bd;*/
   box-shadow: 0 1px 4px #333;
+  /*display: flex;*/
 }
 
 .blog-brand {
@@ -346,10 +387,21 @@ h1.page-heading-service {
     transform: scale(1.1);
   }
 }
+ 
+ul.sub-navbar-menu {
+  li {
+    display: inline-block;
+    a {
+      i {
+        padding: 0 1em 0 0;        
+      }
+    }
+  }
+}
 
-.blog-content {
-  margin-top: 4em;
- }
+#sorts {
+  text-align: center;
+}
 
 .post-style {
   background-color: #FFF;
@@ -404,14 +456,9 @@ h1.page-heading-service {
 
   .post-content-truncate p {
     color: #76787A;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 300;
-    text-align: left;
-    line-height: 1.8em;
-    padding-right: 1.5em;
-/*    min-height: 10em;
-    max-height: 10em;*/
-    padding-left: 0em;
+    text-align: justify;
     padding-bottom: 1em;
   }
   transition: 300ms ease-in-out;
@@ -561,15 +608,15 @@ a:hover.post-link-button i.more-post {
 .navbar .navbar-collapse {
   text-align: center;
 }
-/*
+
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 10px 26px 4px 26px;
+  padding: 2px 26px 4px 26px;
   font-size: 18px;
   line-height: 20px;
 }
-*/
+
 .logo-mikroways {
   margin-bottom: -8%;
 }
@@ -1597,11 +1644,6 @@ b, strong {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   /* navbar menu */
-
-  .blog-branding {
-    margin-top: -3em;
-    float: left;
-  }
 
   .main-menu ul li a {
     display: table;

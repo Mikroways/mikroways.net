@@ -21,24 +21,16 @@
           <div class="row">
             <div class="col-md-12">
               <h5 class="post-author">
-                <i class="fa fa-calendar" aria-hidden="true"></i>
                 <span class="">{{ post.date | date: "%d-%m-%Y" }}</span>  
-                {% for username in post.usernames %}
-                <span class="pipe"> | </span>
-                <span>
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <span itemprop="name">{{ username }}</span>
-                </span>
-                {%endfor%}
               </h5>
             </div>
           </div>
 
           <div class="post-content-truncate">
             {% if post.content contains "<!-- more -->" %}
-            {{ post.content | split:"<!-- more -->" | first % | remove_first: post.title }}
+              {{ post.content | split:"<!-- more -->" | first % | remove_first: post.title }}
             {% else %}
-            {{ post.content | strip_html | truncatewords:10 | remove_first: post.title }}
+              {{ post.content | strip_html | truncatewords:10 | remove_first: post.title }}
             {% endif %}
           </div>
         </div>
