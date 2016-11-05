@@ -15,9 +15,10 @@ social:
   linkedin: "https://www.linkedin.com/company/mikroways"
   twitter: "https://twiter.com/mikroways"
 
-# Build settings
-markdown: kramdown
-
 languages: ["es", "en"]
 
 include: ['_posts']
+
+markdown: kramdown
+kramdown:
+  input: GFM

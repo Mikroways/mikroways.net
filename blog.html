@@ -8,9 +8,11 @@ layout: blog_default
       
       {% for post in site.posts %}
       <div class="post-list">
-          <div class="col-md-4">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <div class="col-md-4 col-xs-12">
             {% include post.html %}
           </div>
+        </a>
       </div>
       {% endfor %}
     </div>
