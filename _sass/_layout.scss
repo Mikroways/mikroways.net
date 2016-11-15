@@ -815,41 +815,6 @@ a.svg:after {
   transition: 300ms ease-in-out;
 }
 
-.chef-partner {
-  min-height: 26.5em;
-  max-height: 26.5em;
-  background-color: white;
-  padding: 4em;
-  text-align: center;
-  transition: 300ms ease-in-out;
-  &:hover {
-
-  }
-}
-
-.docker-partner {
-  min-height: 26.5em;
-  max-height: 26.5em;
-  background-color: white;
-  padding: 4em;
-  text-align: center;
-  transition: 300ms ease-in-out;
-}
-
-.amazon-partner {
-  min-height: 26.5em;
-  max-height: 26.5em;
-  background-color: white;
-  padding: 4em;
-  text-align: center;
-  /*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);*/
-  transition: 300ms ease-in-out;
-  /*border: solid 1em #ffffff;*/
-  &:hover {
-   
-  }
-}
-
 .partnerships-logo {
   text-align: center;
 }
@@ -1342,10 +1307,13 @@ p.verticaline {
 .team-link {
   h4.team-name {
     color: #727477;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    font-weight: 300;
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+    font-weight: 400;
     font-size: 0.9em;
+    padding: 1em;
+    border-bottom: solid 2px #eee;
+    border-top: solid 2px #eee;
   }
 
   h6.team-ocupation {
@@ -1663,17 +1631,22 @@ b, strong {
     font-weight: 700;
     color: white;
     text-align: center;
-    font-size: 2.5em;
     line-height: 0.8em;
     text-transform: uppercase;
+    margin-top: 2em;
+    a{
+      object {
+        width: 3em;
+      }
+    }
   }
   
   h1.slogan {
-    font-size: 1.9em;
+    font-size: 1em;
   }
 
   .wrapper.index p {
-    margin-top: 1.5em;
+    margin-top: 4em;
   }
 
   .wrapper.index p a {
@@ -1719,29 +1692,32 @@ b, strong {
   }
 
   .partners {
-    margin: 0em;
     width:auto;
     height:auto;
-  }
-  .amazon-partner {
-    padding: 1em;
+    padding: 3em;
     min-height: auto;
-    max-height: 30em;
+    max-height: 38em;
     margin-top: 1.5em;
     margin-bottom: 1em;
-  }
 
-  .chef-partner {
-    padding: 2em;
-    min-height: 3em;
-    max-height: 30em;
+    .columns p {
+      font-weight: 400;
+      font-size: 0.9em;
+      color: #727477;
+      -webkit-margin-before: 0.1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      line-height: 1.8em;
+      text-align: center;
+    }
   }
-
-  .docker-partner {
-    min-height: 3em;
-    max-height: 30em;
+  
+  img.partnerships {
+    width: 80%;
+    margin-bottom: 2.5em;
+    margin-top: 0em;
   }
-
 
   /* Contact */
 
@@ -1770,14 +1746,16 @@ b, strong {
 
   .contact-data p i {
     margin-right: 0;
-    padding: 1em;
+    padding: 0.8em;
     vertical-align: middle;
+    margin-right: 0.5em;
+    border:none;
   }
 
   .contact-data p {
     padding: 0;
     text-align: left;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     color: rgba(51, 51, 51, 0.81);
     margin-top: 1em;
   }
