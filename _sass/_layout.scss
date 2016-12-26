@@ -1789,9 +1789,9 @@ b, strong {
 }
 
 .content p {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-  color: #3c4858;
+  font-size: 1em;
+  line-height: 1.9;
+  margin: 15px 0;
 }
 .content > * {
   max-width: 644px;
@@ -1809,7 +1809,7 @@ b, strong {
     letter-spacing: .2px;
   }
   h3{
-    font-size: 23px;
+    font-size: 24px;
     line-height: 31px;
     color: #242424;
     font-weight: 500;
@@ -1817,7 +1817,7 @@ b, strong {
     letter-spacing: .2px;
   }
   h4{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     margin: 45px 0 20px;
     text-align: left;
@@ -1859,13 +1859,21 @@ header.heading {
   -webkit-border-radius: 200px 200px 200px 200px;
   border: 0px solid #000000;
   border: solid 0.5em #eee;
-  margin-bottom: 1.5em;
   transition: 300ms ease-in-out;
 
   &:hover {
     -webkit-filter: none;
     filter: none;
     border-radius: 0;
+  }
+}
+.chevron-back a i{
+  color: lightgray;
+  margin-right: 0.3em;
+  margin-bottom: 1.5em;
+  margin-top: 0.3em;
+  &:hover {
+    color: gray;    
   }
 }
 
