@@ -15,6 +15,10 @@ layout: blog_default
         <div class="content">
           <div class="author-bio">
             <div class="gravatar-style">
+              <div class="col-md-12 chevron-back">
+                <a href="/blog"><i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i></a>
+              </div>
+
               {% for username in page.usernames %}
                 <img class="gravatar" src="https://avatars3.githubusercontent.com/{{ username | to_gravatar }}?s=68" />
                 <div class="row">
