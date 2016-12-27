@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <figure>
-            <img src="{{ post.img }}" alt="Chef" class="">
+            <img src="{{ post.img }}" alt="Imagen de {{ post.categories }}">
           </figure>
         </div>
       </div>
@@ -12,7 +12,7 @@
         <div class="col-md-12 data-container">
           <div class="row">
             <div class="col-md-12 post-categories">
-              <span class="label label-post {{ post.categories }}">{{ post.categories }}</span>
+              <span class="label label-post {{ post.categories | array_to_sentence_string | slugify: 'raw' }}">{{ post.categories }}</span>
             </div>
           </div>
           <h2>

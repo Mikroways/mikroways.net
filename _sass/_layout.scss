@@ -471,7 +471,7 @@ ul.sub-navbar-menu {
   .sistemas-operativos {
     background-color: #1BB14B;
   }
-  .software {
+  .servidores {
     background-color: #369ED8;
   }
   .destacados {
@@ -1788,11 +1788,25 @@ b, strong {
   padding-right: 40px;
 }
 
-.content p {
+.content p, .content li {
   font-size: 1em;
-  line-height: 1.9;
+  line-height: 1.7;
+  margin: 15px 0;
+  font-weight: 300;
+}
+
+.content p {
   margin: 15px 0;
 }
+
+.content li {
+  margin: 5px 0;
+}
+
+p.author {
+  font-weight: 400;
+}
+
 .content > * {
   max-width: 644px;
   margin-left: auto; 
