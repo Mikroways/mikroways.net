@@ -445,7 +445,7 @@ ul.sub-navbar-menu {
     }
   }
 
-  .post-content-truncate p {
+  .post-content-truncate p, .post-content-truncate li {
     color: #76787A;
     font-size: 0.8em;
     font-weight: 300;
@@ -461,6 +461,16 @@ ul.sub-navbar-menu {
   }
   .data-container {
     padding: 0em 2.5em 1em 2.5em;
+  }
+
+  .post-content-truncate ul {
+    margin-top: -1.2em;
+  }
+
+  .post-content-truncate li {
+    padding: 0em;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
   }
 }
 
@@ -1814,23 +1824,24 @@ p.author {
 }
 
 .content-style {
-  h2 {
+/*  h2 {
     font-weight: 500;
     margin: 1.8em 0 .8em;
     font-size: 28px;
     line-height: 38px;
     color: #1d2b36;
     letter-spacing: .2px;
-  }
-  h3{
+  }*/
+  h2 {
     font-size: 24px;
     line-height: 31px;
     color: #242424;
     font-weight: 500;
     margin: 2em 0 1em;
     letter-spacing: .2px;
+    text-transform: none;
   }
-  h4{
+  h3 {
     font-size: 22px;
     font-weight: 700;
     margin: 45px 0 20px;
@@ -1838,7 +1849,7 @@ p.author {
     line-height: 1.4em;
     color: #1d2b36;
   }
-  h5{
+  h4 {
     font-size: 15px;
     font-weight: 600;
     opacity: .35;
@@ -1849,7 +1860,7 @@ p.author {
     line-height: 1.6em;
     color: #1d2b36;
   }
-  h6 {
+  h5 {
     font-size: 12px;
     font-weight: 600;
     margin: 10px 0 20px;
@@ -1865,19 +1876,19 @@ header.heading {
 }
 
 .gravatar-style img {
+  filter: none;
+    -webkit-filter: none;
   width: 7em;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
   border: 0px solid #000000;
   border: solid 0.5em #eee;
   transition: 300ms ease-in-out;
 
   &:hover {
-    -webkit-filter: none;
-    filter: none;
+    filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
     border-radius: 0;
   }
 }
@@ -1911,4 +1922,8 @@ header.heading {
     padding-left: 0em;
   }
 
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #e9e9e9;
 }
