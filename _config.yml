@@ -8,8 +8,6 @@ description: >
 baseurl: ""
 turbolinksurl: "/jekyll-with-turbolinks-and-animatecss" # the subpath of your site, e.g. /blog 
 url: "http://www.mikroways.net"
-twitter_username: jekyllrb
-github_username:  jekyll
 social:
   facebook: "https://facebook.com/mikroways"
   github: "https://github.com/mikroways"
