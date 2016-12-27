@@ -40,14 +40,15 @@ layout: blog_default
               </div>
 
               {% for author in page.authors %}
-                <img class="gravatar" src="https://avatars3.githubusercontent.com/{{ author['username'] | to_gravatar }}?s=68" />
+                {% assign author_data = site.blog.authors[author] %}
+                <img class="gravatar" src="https://avatars3.githubusercontent.com/{{ author_data['github_username'] | to_gravatar }}?s=112" />
                 <div class="row">
                   <div class="col-md-12 col-xs-12 post-meta-post">
                     <p class="author">
                     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                       <span itemprop="name">
                         <b>Autor</b><br> 
-                        <a target="_blank" href="https://github.com/{{ author['username'] }}">{{ author['name'] }}</a>
+                        <a target="_blank" href="https://github.com/{{ author_data['github_username'] }}">{{ author_data['name'] }}</a>
                       </span>
                     </span>
                     </p>

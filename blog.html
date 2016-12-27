@@ -1,27 +1,23 @@
 ---
 layout: blog_default
 ---
-    <div class="col-md-12">
-      <div class="page-content blog-content" id="content">
-        <div class="post-data">
- 
-<div class="container blog-container">
-  <div class="row">
-    <div class="col-md-12">
 
-      {% for post in site.posts %}
-      <div class="post-list">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <div class="col-md-4 col-xs-12">
-            {% include post.html %}
-          </div>
-        </a>
+<div class="col-md-12">
+  <div class="page-content blog-content" id="content">
+    <div class="post-data">
+      <div class="container blog-container">
+
+            {% for post in site.posts %}
+            <div class="post-list">
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                <div class="col-md-4 col-xs-12">
+                  {% include post.html %}
+                </div>
+              </a>
+            </div>
+            {% endfor %}
       </div>
-      {% endfor %}
+
     </div>
   </div>
 </div>
-
-        </div>
-      </div>
-    </div>

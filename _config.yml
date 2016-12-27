@@ -27,6 +27,16 @@ blog:
     sistemas operativos:
       image: /images/post/prueba3.png
       color: "#eddd38"
+  authors:
+    leandro:
+      name: Leandro Di Tommaso
+      github_username: leoditommaso
+    car:
+      name: Christian Rodríguez
+      github_username: chrodriguez
+    geronimo:
+      name: Gerónimo Afonso
+      github_username: afonsog
 
 include: ['_posts']
 
