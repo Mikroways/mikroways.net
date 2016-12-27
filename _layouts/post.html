@@ -19,15 +19,15 @@ layout: blog_default
                 <a href="/blog"><i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i></a>
               </div>
 
-              {% for username in page.usernames %}
-                <img class="gravatar" src="https://avatars3.githubusercontent.com/{{ username | to_gravatar }}?s=68" />
+              {% for author in page.authors %}
+                <img class="gravatar" src="https://avatars3.githubusercontent.com/{{ author['username'] | to_gravatar }}?s=68" />
                 <div class="row">
                   <div class="col-md-12 col-xs-12 post-meta-post">
                     <p class="author">
                     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                       <span itemprop="name">
                         <b>Autor</b><br> 
-                        <a href="https://github.com/{{ username }}">{{ username }}</a>
+                        <a target="_blank" href="https://github.com/{{ author['username'] }}">{{ author['name'] }}</a>
                       </span>
                     </span>
                     </p>
