@@ -16,6 +16,18 @@ social:
 
 languages: ["es", "en"]
 
+blog:
+  categories:
+    redes:
+      image: /images/post/prueba1.png
+      color: "#6bd9ed"
+    servidores:
+      image: /images/post/blog_images_software.svg
+      color: "#04a9d3"
+    sistemas operativos:
+      image: /images/post/prueba3.png
+      color: "#eddd38"
+
 include: ['_posts']
 
 markdown: kramdown

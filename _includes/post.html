@@ -4,7 +4,9 @@
       <div class="row">
         <div class="col-md-12">
           <figure>
-            <img src="{{ post.img }}" alt="Imagen de {{ post.categories }}">
+            {% assign cat = post.categories | first %}
+            {% assign image = site.blog.categories[cat].image %}
+            <img src="{{ image }}" alt="Imagen de {{ post.categories }}">
           </figure>
         </div>
       </div>

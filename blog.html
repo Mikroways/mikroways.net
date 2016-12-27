@@ -1,11 +1,14 @@
 ---
 layout: blog_default
 ---
-
+    <div class="col-md-12">
+      <div class="page-content blog-content" id="content">
+        <div class="post-data">
+ 
 <div class="container blog-container">
   <div class="row">
     <div class="col-md-12">
-      
+
       {% for post in site.posts %}
       <div class="post-list">
         <a href="{{ post.url | prepend: site.baseurl }}">
@@ -18,3 +21,7 @@ layout: blog_default
     </div>
   </div>
 </div>
+
+        </div>
+      </div>
+    </div>

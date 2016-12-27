@@ -1,6 +1,26 @@
 ---
 layout: blog_default
 ---
+
+{% assign cat = page.categories | first %}
+{% assign color = site.blog.categories[cat].color %}
+{% assign image = site.blog.categories[cat].image %}
+<section class="post-page-image" style="background-color: {{ color }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <figure>
+          <img src="{{ image }}">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container blog-container">
+  <div class="row">
+    <div class="col-md-12">
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <div class="row">
@@ -46,3 +66,7 @@ layout: blog_default
   </div>
 
 </article>
+
+    </div>
+  </div>
+</div>
