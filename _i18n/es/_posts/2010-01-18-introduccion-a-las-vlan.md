@@ -13,7 +13,7 @@ Una VLAN (virtual LAN) es, conceptualmente, una red de área local formada a
 nivel lógico. Dada esta particularidad, las VLANs proveen una forma de separar
 grupos de hosts con objetivos diferentes aunque estos se encuentren conectados
 al mismo switch. A su vez, en este punto, nos permite optimizar los puertos de
-switch.
+switch. <!-- more -->
 
 Debajo pueden verse dos topologías que dan como resultado una misma red a nivel
 lógico. La primera de ellas no utiliza VLANs, con lo cual necesita de diferentes
