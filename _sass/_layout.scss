@@ -135,6 +135,12 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-blog {
 
 .blog-container {
   margin-top: 4em;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content:         flex-start;
+  -webkit-justify-content: flex-start;
 }
 
 /**
@@ -1929,4 +1935,8 @@ header.heading {
 
 .table-striped>tbody>tr:nth-of-type(odd) {
   background-color: #e9e9e9;
+}
+
+.col-md-4.post-item, col-xs-12.post-item {
+  flex-grow: 1;
 }
