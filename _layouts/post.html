@@ -21,58 +21,70 @@ layout: blog_default
   <div class="row">
     <div class="col-md-12">
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <div class="row">
-    <div class="container">
-      <header class="heading">
-        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-        <p class="post-meta">
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-        </p>
-      </header>
-      <div class="post-content" itemprop="articleBody">
-        <div class="content">
-          <div class="author-bio">
-            <div class="gravatar-style">
-              <div class="col-md-12 chevron-back">
-                <a href="/blog"><i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i></a>
-              </div>
+        <div class="row">
+          <div class="container">
+            <header class="heading">
+              <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+              <p class="post-meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+              </p>
+            </header>
+            <div class="post-content" itemprop="articleBody">
+              <div class="content">
+                <div class="author-bio">
+                  <div class="gravatar-style">
+                    <div class="col-md-12 chevron-back">
+                      <a href="/blog"><i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i></a>
+                    </div>
 
-              {% for author in page.authors %}
-                {% assign author_data = site.blog.authors[author] %}
-                <img class="gravatar" src="https://avatars3.githubusercontent.com/{{ author_data['github_username'] | to_gravatar }}?s=112" />
-                <div class="row">
-                  <div class="col-md-12 col-xs-12 post-meta-post">
-                    <p class="author">
-                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                      <span itemprop="name">
-                        <b>Autor</b><br> 
-                        <a target="_blank" href="https://github.com/{{ author_data['github_username'] }}">{{ author_data['name'] }}</a>
-                      </span>
-                    </span>
-                    </p>
+                    {% for author in page.authors %}
+                    {% assign author_data = site.blog.authors[author] %}
+                    <img class="gravatar" src="https://avatars3.githubusercontent.com/{{ author_data['github_username'] | to_gravatar }}?s=112" />
+                    <div class="row">
+                      <div class="col-md-12 col-xs-12 post-meta-post">
+                        <p class="author">
+                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                          <span itemprop="name">
+                            <b>Autor</b><br> 
+                            <a target="_blank" href="https://github.com/{{ author_data['github_username'] }}">{{ author_data['name'] }}</a>
+                          </span>
+                        </span>
+                        </p>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="content-style">
+                  {{ content }}
+                  <p class="post-meta tags">
+                  {% for tag in page.tags %}
+                  {{ tag }}
+                  {% endfor %}
+                  </p>
+                </div>
+                <div class="post-comments">
+                  <div id="disqus_thread">
+                    <script>
+                      (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = '//mikroways.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                      })();
+                    </script>
+                    <noscript>Se requiere JavaScript para ver los comentarios.</noscript>
                   </div>
                 </div>
-              {% endfor %}
+              </div>
             </div>
-            <div class="clearfix"></div>
           </div>
-          <div class="content-style">
-            {{ content }}
-            <p class="post-meta tags">
-              {% for tag in page.tags %}
-                {{ tag }}
-              {% endfor %}
-            </p>
-          </div>
+
+      </article>
+
         </div>
-      </div>
     </div>
   </div>
-
-</article>
-
-    </div>
-  </div>
-</div>
