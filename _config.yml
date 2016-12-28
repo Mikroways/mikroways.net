@@ -18,10 +18,25 @@ languages: ["es", "en"]
 
 blog:
   categories:
+    devops:
+      image: /images/post/prueba3.png
+      color: "#eddd38"
+    iot:
+      image: /images/post/prueba3.png
+      color: "#eddd38"
+    monitoreo:
+      image: /images/post/prueba3.png
+      color: "#eddd38"
+    noticias:
+      image: /images/post/prueba3.png
+      color: "#eddd38"
     redes:
       image: /images/post/prueba1.png
       color: "#6bd9ed"
     servidores:
+      image: /images/post/blog_images_software.svg
+      color: "#04a9d3"
+    software:
       image: /images/post/blog_images_software.svg
       color: "#04a9d3"
     sistemas operativos:
