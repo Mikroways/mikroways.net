@@ -54,12 +54,17 @@ layout: blog_default
                     </p>
                   </div>
                 </div>
-              {% endfor%}
+              {% endfor %}
             </div>
             <div class="clearfix"></div>
           </div>
           <div class="content-style">
             {{ content }}
+            <p class="post-meta tags">
+              {% for tag in page.tags %}
+                {{ tag }}
+              {% endfor %}
+            </p>
           </div>
         </div>
       </div>
