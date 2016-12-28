@@ -117,8 +117,7 @@ que se haga esto se cambie el serial, para los navegadores que tengan cacheado
 el certificado.
 
 {% highlight bash %}
-openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -set_serial
-01 -out server.crt
+openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt
 {% endhighlight %}
 
 Para examinar los componentes en caso de que se desee:
