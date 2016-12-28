@@ -14,10 +14,9 @@ seguridad lo exige es el de private VLAN. Básicamente, se divide una VLAN
 primaria en varias VLANs privadas, donde cada puerto de una VLAN privada puede
 comunicarse sólo con un único puerto de Uplink y no con los demás puertos. Para
 clarificarlo un poco con un ejemplo se muestra el siguiente esquema:
+<!-- more -->
 
 ![Topología de ejemplo](/images/blog/private-vlans.png)
-
-<!-- more -->
 
 Lo que se desea lograr es que cada uno de los tres servidores puedan tener
 acceso a internet pero no comunicarse directamente entre sí (a nivel de capa 2).
