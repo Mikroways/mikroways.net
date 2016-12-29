@@ -1816,10 +1816,10 @@ b, strong {
   position: absolute;
   top: 4em;
   right: 50%;
-  margin-right: 360px!important;
+  margin-right: 393px!important;
   border-right: 1px solid #EEE;
   text-align: right;
-  padding-right: 40px;
+  padding-right: 35px;
 }
 
 .content p, .content li {
@@ -1842,7 +1842,7 @@ p.author {
 }
 
 .content > * {
-  max-width: 644px;
+  max-width: 710px;
   margin-left: auto; 
   margin-right: auto;
 }
@@ -1894,7 +1894,7 @@ p.author {
 }
 
 header.heading {
-  max-width: 644px;
+  max-width: 710px;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -1954,4 +1954,17 @@ header.heading {
 
 .col-md-4.post-item, col-xs-12.post-item {
   flex-grow: 1;
+}
+
+img.content-style {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+pre {
+  word-wrap: unset;
+  > code {
+    white-space: pre;
+  }
 }
