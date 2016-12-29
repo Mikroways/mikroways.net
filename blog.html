@@ -6,7 +6,12 @@ layout: blog_default
   <div class="page-content blog-content" id="content">
     <div class="post-data">
       <div class="container blog-container">
-        {% for post in site.posts %}
+        {% if page.tag_view %}
+          {% assign posts = page.posts %}
+        {% else %}
+          {% assign posts = site.posts %}
+        {% endif %}
+        {% for post in posts %}
         <div class="col-md-4 col-xs-12 post-item">
           <div class="post-list">
             <div class="single-post">

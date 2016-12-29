@@ -60,11 +60,16 @@ layout: blog_default
                 </div>
                 <div class="content-style">
                   {{ content }}
-                  <p class="post-meta tags">
-                  {% for tag in page.tags %}
-                  {{ tag }}
-                  {% endfor %}
-                  </p>
+
+                  {% if page.tags %}
+                    <div class="post-meta tags">Etiquetas:
+                    {% for tag in page.tags %}
+                      <a href="/tags/{{ tag }}.html" title="Ver entradas etiquetadas con &quot;{{ tag }}&quot;">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
+                    {% endfor %}
+                    </div>
+                  {% endif %}
+
+
                 </div>
                 <div class="post-comments">
                   <div id="disqus_thread">
