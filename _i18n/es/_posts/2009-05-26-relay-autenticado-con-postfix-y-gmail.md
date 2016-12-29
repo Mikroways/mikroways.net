@@ -74,8 +74,7 @@ Finalmente, debemos especificar a Postfix el certificado de la CA que deseamos
 que utilice. Para ello:
 
 ```
-cat /etc/ssl/certs/Thawte_Premium_Server_CA.pem &gt;&gt;
-/etc/postfix/cacert.pem
+cat /etc/ssl/certs/Thawte_Premium_Server_CA.pem >> /etc/postfix/cacert.pem
 ```
 
 ## Cuentas de Google Apps

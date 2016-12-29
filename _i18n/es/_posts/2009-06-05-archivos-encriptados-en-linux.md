@@ -43,8 +43,7 @@ Salted__????I?y?
 Para desencriptar el archivo basta con realizar el proceso inverso:
 
 {% highlight bash %}
-leandro@scarlet:~$ openssl des3 -d -salt -in archivo_encriptado -out
-archivo_texto_plano
+leandro@scarlet:~$ openssl des3 -d -salt -in archivo_encriptado -out archivo_texto_plano
 enter des-ede3-cbc decryption password: ****
 
 leandro@scarlet:~$ cat archivo_texto_plano
@@ -101,8 +100,7 @@ cualquier otra cosa (o una línea vacía) seleccionará el modo estándar.
 
 Configuración paranoica seleccionada.
 
-Configuración finalizada. El sistema de archivos que se va a crear tendrá las
-siguientes propiedades:
+Configuración finalizada. El sistema de archivos que se va a crear tendrá las siguientes propiedades:
 Cifrado del sistema de archivos: "ssl/aes", versión 2:1:1
 Codificación de nombres de archivos: "nameio/block", versión 3:0:1
 Tamaño de clave: 256 bits
@@ -112,14 +110,11 @@ Los nombres de archivos se codificarán usando el modo de encadenamiento de IV.
 El IV de los datos del archivo está encadenado al IV del nombre del archivo.
 
 ------------------------ ADVERTENCIA ------------------------
-Se ha habilitado  la opción de encadenamiento de vectores externos de
-inicialización.
+Se ha habilitado  la opción de encadenamiento de vectores externos de inicialización.
 Esta opción impide el uso de enlaces duros en el sistema de archivos. Sin
-enlaces duros, algunos programas pueden fallar; por ejemplo los programas 'mutt'
-y 'procmail'.
+enlaces duros, algunos programas pueden fallar; por ejemplo los programas 'mutt' y 'procmail'.
 Para más información, por favor revise la lista de correo de encfs.
-Si desea elegir otra configuración, por favor pulse CTRL-C para abortar la
-ejecución y comience de nuevo.
+Si desea elegir otra configuración, por favor pulse CTRL-C para abortar la ejecución y comience de nuevo.
 
 A continuación se le pedirá una contraseña para el sistema de archivos.
 Debe recordar esta contraseña, ya que no existe absolutamente ningún mecanismo
@@ -137,8 +132,7 @@ archivos encriptado. Lo siguiente es proceder a crear un archivo llamado
 ''prueba.txt'' con el contenido ''Prueba de encfs''.
 
 {% highlight bash %}
-leandro@scarlet:~$ echo "Prueba de encfs" >
-/home/leandro/dir_encriptado/prueba.txt
+leandro@scarlet:~$ echo "Prueba de encfs" > /home/leandro/dir_encriptado/prueba.txt
 leandro@scarlet:~$ cat /home/leandro/dir_encriptado/prueba.txt
 Prueba de encfs
 {% endhighlight %}
@@ -166,8 +160,7 @@ leandro@scarlet:~$ cat /home/leandro/.dir_encriptado/iEEeq3KRIMJ6WSJ9x2,6Sd,x
 Para volver a acceder al contenido:
 
 {% highlight bash %}
-leandro@scarlet:~$ encfs /home/leandro/.dir_encriptado/
-/home/leandro/dir_encriptado/
+leandro@scarlet:~$ encfs /home/leandro/.dir_encriptado/ /home/leandro/dir_encriptado/
 Contraseña EncFS: ****
 leandro@scarlet:~$ cat /home/leandro/dir_encriptado/prueba.txt
 Prueba de encfs

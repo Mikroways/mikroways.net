@@ -45,8 +45,7 @@ la ejecución, tal como se muestra a continuación:
 testing:/home/leandro# resize2fs /dev/testing/storage 1G
 
 resize2fs 1.41.3 (12-Oct-2008)
-Filesystem at /dev/testing/storage is mounted on /storage; on-line resizing required
-On-line shrinking from 772096 to 262144 not supported.
+Filesystem at /dev/testing/storage is mounted on /storage; on-line resizing required On-line shrinking from 772096 to 262144 not supported.
 {% endhighlight %}
 
 Se ve que dice claramente que la reducción del filesystem de forma on-line no
@@ -110,9 +109,8 @@ Do you really want to reduce storage? [y/n]: y
   Logical volume storage successfully resized
 
 testing:/home/leandro# df -h
-Filesystem            Size  Used Avail Use% Mounted on
-/dev/mapper/testing-storage
-                     1008M   35M  923M   4% /storage
+Filesystem                    Size   Used   Avail   Use%  Mounted on
+/dev/mapper/testing-storage   1008M   35M   923M    4%    /storage
 
 testing:/home/leandro# lvdisplay /dev/testing/storage | grep Size
   LV Size                1.00 GB

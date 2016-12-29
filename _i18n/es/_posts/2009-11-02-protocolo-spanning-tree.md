@@ -14,9 +14,10 @@ switches, de forma que queden varios caminos para llegar a un mismo destino. El
 resultado de esto es que la red LAN queda con ciclos o bucles. En la figura
 puede verse una red LAN redundante y cómo se forma un ciclo en ella.
 
+<!-- more -->
+
 ![Topología de ejemplo](/images/blog/red-lan-redundante.png)
 
-<!-- more -->
 
 Si bien la red anterior es redundante los ciclos son altamente perjudiciales
 para la misma dado que producen una serie de problemas que acabarán por dejarla

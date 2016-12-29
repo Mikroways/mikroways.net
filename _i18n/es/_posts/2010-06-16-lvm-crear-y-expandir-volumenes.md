@@ -59,8 +59,7 @@ testing:~# lvcreate testing -L 1.99G -n storage
   Logical volume "storage" created
 
 testing:~# ls -l /dev/testing/storage
-lrwxrwxrwx 1 root root 27 2010-06-10 16:01 /dev/testing/storage -&gt;
-/dev/mapper/testing-storage
+lrwxrwxrwx 1 root root 27 2010-06-10 16:01 /dev/testing/storage -> /dev/mapper/testing-storage
 {% endhighlight %}
 
 **Crear el sistema de archivos en el volumen lógico**
@@ -103,9 +102,8 @@ testing:~# vi /etc/fstab
 testing:~# mkdir /storage
 testing:~# mount /storage/
 testing:~# df -h
-Filesystem            Size  Used Avail Use% Mounted on
-/dev/mapper/testing-storage
-                      2.0G   36M  1.9G   2% /storage
+Filesystem                    Size  Used  Avail  Use%   Mounted on
+/dev/mapper/testing-storage   2.0G   36M   1.9G    2%   /storage
 testing:~# echo "prueba" &gt; /storage/archivo.txt
 testing:~# cat /storage/archivo.txt
 prueba
@@ -163,10 +161,10 @@ tamaño, según muestra la salida del comando *df*.
 
 {% highlight bash %}
 testing:~# df -h
-Filesystem            Size  Used Avail Use% Mounted on
-/dev/mapper/testing-storage
-                      2.0G   36M  1.9G   2% /storage
+Filesystem                    Size  Used  Avail  Use%   Mounted on
+/dev/mapper/testing-storage   2.0G   36M  1.9G     2%   /storage
 {% endhighlight %}
+
 Lo que ha ocurrido es que, si bien el volumen ya cuenta con una mayor capacidad
 de almacenamiento, el sistema de archivos que se creó está limitando el tamaño
 del mismo. Por ello, es necesario extender el sistema de archivos existente.
@@ -175,16 +173,13 @@ Este paso se realizará on-line, es decir, **sin desmontar el volumen**.
 {% highlight bash %}
 testing:~# resize2fs /dev/testing/storage
 resize2fs 1.41.3 (12-Oct-2008)
-Filesystem at /dev/testing/storage is mounted on /storage; on-line resizing
-required
-old desc_blocks = 1, new_desc_blocks = 1
+Filesystem at /dev/testing/storage is mounted on /storage; on-line resizing required old desc_blocks = 1, new_desc_blocks = 1
 Performing an on-line resize of /dev/testing/storage to 772096 (4k) blocks.
 The filesystem on /dev/testing/storage is now 772096 blocks long.
 
 testing:~# df -h
-Filesystem            Size  Used Avail Use% Mounted on
-/dev/mapper/testing-storage
-                      2.9G   36M  2.8G   2% /storage
+Filesystem                    Size  Used  Avail  Use%   Mounted on
+/dev/mapper/testing-storage   2.9G   36M  2.8G     2%   /storage
 
 testing:~# cat /storage/archivo.txt
 prueba

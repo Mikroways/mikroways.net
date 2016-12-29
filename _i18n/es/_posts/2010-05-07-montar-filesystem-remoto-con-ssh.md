@@ -29,12 +29,10 @@ Una vez instalado sshfs su uso es muy trivial. Simplemente especificamos el
 nombre de usuario@IP_maquina:/directorio/a/montar /punto/de/montaje.
 
 {% highlight bash %}
-[leandro@megan ~]# sshfs leandro@192.168.1.2:/Users/leandro/datos/
-/mnt/scarlet/
+[leandro@megan ~]# sshfs leandro@192.168.1.2:/Users/leandro/datos/ /mnt/scarlet/
 Password:
 [leandro@megan ~]$ mount
-192.168.1.2:/Users/leandro/datos on /mnt/scarlet type fuse.sshfs
-(rw,nosuid,nodev,max_read=65536,user=leandro)
+192.168.1.2:/Users/leandro/datos on /mnt/scarlet type fuse.sshfs (rw,nosuid,nodev,max_read=65536,user=leandro)
 {% endhighlight %}
 
 En el ejemplo anterior se puede ver cómo se ha montado el sistema de archivos.

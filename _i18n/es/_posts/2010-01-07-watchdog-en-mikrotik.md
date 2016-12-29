@@ -20,6 +20,5 @@ se reinicie en una de dos situaciones: si sufre un kernel panic y si una
 determinada IP deja de ser alcanzable.
 
 ```
-[admin@MikroTik] > system watchdog set watch-address=192.168.1.2
-reboot-on-failure=yes
+[admin@MikroTik] > system watchdog set watch-address=192.168.1.2 reboot-on-failure=yes
 ```

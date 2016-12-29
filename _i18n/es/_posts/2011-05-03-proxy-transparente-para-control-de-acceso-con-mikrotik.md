@@ -19,10 +19,8 @@ regla es precisamente la que hace que el proxy sea transparente.
 
 ```
 [admin@MikroTik] > ip proxy set enabled=yes port=8080
-[admin@MikroTik] > ip firewall filter add chain=input action=accept protocol=tcp
-dst-port=8080 src-address=192.168.1.0/24 comment="Proxy para LAN"
-[admin@MikroTik] > ip firewall nat add in-interface=LAN dst-port=80 protocol=tcp
-action=redirect to-ports=8080 chain=dstnat
+[admin@MikroTik] > ip firewall filter add chain=input action=accept protocol=tcp dst-port=8080 src-address=192.168.1.0/24 comment="Proxy para LAN"
+[admin@MikroTik] > ip firewall nat add in-interface=LAN dst-port=80 protocol=tcp action=redirect to-ports=8080 chain=dstnat
 ```
 
 Finalmente, se deben escribir las reglas para restringir los sitios que se

@@ -46,32 +46,21 @@ srcversion:     0D992F3F7BA86233AA29838
 depends:        
 vermagic:       2.6.32-21-server SMP mod_unload modversions 
 parm:           max_bonds:Max number of bonded devices (int)
-parm:           num_grat_arp:Number of gratuitous ARP packets to send on
-failover event (int)
-parm:           num_unsol_na:Number of unsolicited IPv6 Neighbor Advertisements
-packets to send on failover event (int)
+parm:           num_grat_arp:Number of gratuitous ARP packets to send on failover event (int)
+parm:           num_unsol_na:Number of unsolicited IPv6 Neighbor Advertisements packets to send on failover event (int)
 parm:           miimon:Link check interval in milliseconds (int)
 parm:           updelay:Delay before considering link up, in milliseconds (int)
-parm:           downdelay:Delay before considering link down, in milliseconds
-(int)
-parm:           use_carrier:Use netif_carrier_ok (vs MII ioctls) in miimon; 0
-for off, 1 for on (default) (int)
-parm:           mode:Mode of operation : 0 for balance-rr, 1 for active-backup,
-2 for balance-xor, 3 for broadcast, 4 for 802.3ad, 5 for balance-tlb, 6 for
-balance-alb (charp)
+parm:           downdelay:Delay before considering link down, in milliseconds (int)
+parm:           use_carrier:Use netif_carrier_ok (vs MII ioctls) in miimon; 0 for off, 1 for on (default) (int)
+parm:           mode:Mode of operation : 0 for balance-rr, 1 for active-backup, 2 for balance-xor, 3 for broadcast, 4 for 802.3ad, 5 for balance-tlb, 6 for balance-alb (charp)
 parm:           primary:Primary network device to use (charp)
-parm:           lacp_rate:LACPDU tx rate to request from 802.3ad partner
-(slow/fast) (charp)
-parm:           ad_select:803.ad aggregation selection logic: stable (0,
-default), bandwidth (1), count (2) (charp)
-parm:           xmit_hash_policy:XOR hashing method: 0 for layer 2 (default), 1
-for layer 3+4 (charp)
+parm:           lacp_rate:LACPDU tx rate to request from 802.3ad partner (slow/fast) (charp)
+parm:           ad_select:803.ad aggregation selection logic: stable (0, default), bandwidth (1), count (2) (charp)
+parm:           xmit_hash_policy:XOR hashing method: 0 for layer 2 (default), 1 for layer 3+4 (charp)
 parm:           arp_interval:arp interval in milliseconds (int)
 parm:           arp_ip_target:arp targets in n.n.n.n form (array of charp)
-parm:           arp_validate:validate src/dst of ARP probes: none (default),
-active, backup or all (charp)
-parm:           fail_over_mac:For active-backup, do not set all slaves to the
-same MAC.  none (default), active or follow (charp)
+parm:           arp_validate:validate src/dst of ARP probes: none (default), active, backup or all (charp)
+parm:           fail_over_mac:For active-backup, do not set all slaves to the same MAC.  none (default), active or follow (charp)
 ```
 
 ### Configuración en Debian

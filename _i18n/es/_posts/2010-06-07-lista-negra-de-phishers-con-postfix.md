@@ -60,8 +60,7 @@ mismo directorio donde se encuentra el fuente:
 
 {% highlight bash %}
 file /etc/postfix/blacklist.db
-/etc/postfix/blacklist.db: Berkeley DB (Hash, version 8, native
-byte-order)
+/etc/postfix/blacklist.db: Berkeley DB (Hash, version 8, native byte-order)
 {% endhighlight %}
 
 Luego, indicarle a Postfix que lea dicha lista:

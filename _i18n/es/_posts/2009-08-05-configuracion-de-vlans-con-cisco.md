@@ -125,13 +125,13 @@ sw1#show vlan brief
 VLAN Name                             Status    Ports
 ---- -------------------------------- --------- -------------------------------
 1    default                          active    Fa0/15, Fa0/16, Fa0/17, Fa0/18
-Fa0/19, Fa0/20, Fa0/21, Fa0/22
-Fa0/23, Fa0/24, Gig1/2
+                                                Fa0/19, Fa0/20, Fa0/21, Fa0/22
+                                                Fa0/23, Fa0/24, Gig1/2
 4    VLAN0004                         active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
-Fa0/5, Fa0/6, Fa0/7, Fa0/8
-Fa0/9
+                                                Fa0/5, Fa0/6, Fa0/7, Fa0/8
+                                                Fa0/9
 5    VLAN0005                         active    Fa0/10, Fa0/11, Fa0/12, Fa0/13
-Fa0/14
+                                                Fa0/14
 1002 fddi-default                     active
 1003 token-ring-default               active
 1004 fddinet-default                  active
@@ -142,8 +142,8 @@ sw1#show vlan id 4
 VLAN Name                             Status    Ports
 ---- -------------------------------- --------- -------------------------------
 4    VLAN0004                         active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
-Fa0/5, Fa0/6, Fa0/7, Fa0/8
-Fa0/9
+                                                Fa0/5, Fa0/6, Fa0/7, Fa0/8
+                                                Fa0/9
 
 VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
 ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
@@ -152,8 +152,7 @@ VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
 sw1#show interfaces vlan 4
 Vlan4 is up, line protocol is up
 Hardware is CPU Interface, address is 0007.ecaa.64a6 (bia 0007.ecaa.64a6)
-MTU 1500 bytes, BW 100000 Kbit, DLY 1000000 usec,
-reliability 255/255, txload 1/255, rxload 1/255
+MTU 1500 bytes, BW 100000 Kbit, DLY 1000000 usec, reliability 255/255, txload 1/255, rxload 1/255
 Encapsulation ARPA, loopback not set
 ARP type: ARPA, ARP Timeout 04:00:00
 Last input 21:40:21, output never, output hang never
