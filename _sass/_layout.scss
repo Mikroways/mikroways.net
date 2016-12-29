@@ -114,18 +114,40 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-blog {
     li {
       padding: 1em;
       text-align: center!important;
-      /*background-color: #369ed8!important;*/
-      
       a {
         color: white!important;
         font-size: 0.9em;
         text-transform: uppercase;
+        &:active {
+          background-color: #0e3b72!important;
+          opacity: 0.5;
+        }
         &:hover {
-          color: rgba(255, 255, 255, 0.38)!important;
+          background-color: #0e3b72!important;
+          opacity: 0.3;
+        }
+      }
+
+
+      ul.dropdown-menu {
+        background-color: #0e3b72;
+        li {
+          padding: 0;
+          margin: 0;
+          a {
+            text-align: left;
+            padding-bottom: 1em;
+            padding-top: 1em;
+          }
         }
       }
     }
   }
+}
+
+.nav .open > a {
+    background-color: #0e3b72!important;
+    opacity: 0.5;
 }
 .container-fluid {
   .navbar-header {
