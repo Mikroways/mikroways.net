@@ -1,0 +1,36 @@
+---
+layout: blog_default
+---
+
+<div class="col-md-12">
+  <div class="page-content blog-content" id="content">
+    <div class="post-data">
+      <div class="container blog-container">
+        <div class="col-md-12">
+
+          <div class="panel panel-default archive">
+          {% assign last_date = 0 %}
+          {% for post in site.posts %}
+            {% capture current_date %}{{ post.date | date: '%B %Y' }}{% endcapture %}
+            {% if last_date != current_date %}
+              {% if last_date != 0 %}
+              </ul>
+              {% endif %}
+              {% assign month_number = post.date | date: "%-m" %}
+              {% include date_mapping.i18n %}
+              <div class="panel-heading">{{ month | capitalize }} {{ post.date | date: '%Y' }}
+              </div>
+            <ul class="list-group">
+            {% endif %}
+            <li class="list-group-item">
+              <a class="archives-entry" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            </li>
+            {% assign last_date = current_date %}
+          {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
