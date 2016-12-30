@@ -6,7 +6,7 @@ layout: blog_default
   <div class="page-content blog-content" id="content">
     <div class="post-data">
       <div class="container blog-container">
-        {% if page.tag_view %}
+        {% if page.taxonomy_view %}
           {% assign posts = page.posts %}
         {% else %}
           {% assign posts = site.posts %}
@@ -32,7 +32,9 @@ layout: blog_default
                     <div class="col-md-12 data-container">
                       <div class="row">
                         <div class="col-md-12 post-categories">
-                          <span class="label label-post {{ post.categories | array_to_sentence_string | slugify: 'raw' }}">{{ post.categories }}</span>
+                          <a href="/category/{{ post.categories }}">
+                            <span class="label label-post {{ post.categories | array_to_sentence_string | slugify: 'raw' }}">{{ post.categories }}</span>
+                          </a>
                         </div>
                       </div>
                       <h2>

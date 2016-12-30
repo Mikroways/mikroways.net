@@ -1,24 +1,27 @@
-module TagSystem
-  class TagPage < Jekyll::Page
-    def initialize(site, base, category, posts)
+module TaxonomySystem
+  class TaxonomyPage < Jekyll::Page
+    def initialize(site, base, taxonomy, posts, dir)
       @site = site
       @base = base
-      @dir = 'tags'
-      @name = "#{category}.html"
+      @dir = dir
+      @name = "#{taxonomy}.html"
 
       process(@name)
       read_yaml(File.join(base), 'blog.html')
-      data['tag_view'] = true
-      data['tag'] = category
+      data['taxonomy_view'] = true
+      data['taxonomy'] = taxonomy
       data['posts'] = posts
-      data['title'] = "Entradas con la etiqueta: #{category}"
+      data['title'] = "Entradas pertenecientes a #{taxonomy}"
     end
   end
 
-  class Tags < Jekyll::Generator
+  class Taxonomy < Jekyll::Generator
     def generate(site)
       site.tags.each do |tag, posts|
-        site.pages << TagPage.new(site, site.source, tag, posts.reverse)
+        site.pages << TaxonomyPage.new(site, site.source, tag, posts.reverse, 'tag')
+      end
+      site.categories.each do |category, posts|
+        site.pages << TaxonomyPage.new(site, site.source, category, posts.reverse, 'category')
       end
     end
   end
