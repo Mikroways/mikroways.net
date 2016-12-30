@@ -4,7 +4,7 @@ layout: post
 title: Equivalencias entre DPKG/RPM y APT/YUM
 authors: leandro
 categories: [ sistemas operativos ]
-tags: [apt-get, comandos, consola, debian, dpkg, fedora, rpm, linux, red-hat,
+tags: [apt-get, comandos, consola, debian, dpkg, fedora, rpm, linux, red hat,
 ubuntu, yum]
 permalink: /2010/02/23/equivalencias-entre-dpkgrpm-y-aptyum/
 
