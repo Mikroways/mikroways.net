@@ -18,28 +18,28 @@ languages: ["es", "en"]
 blog:
   categories:
     devops:
-      image: /images/post/devops.png
+      image: /images/blog/category/devops.png
       color: "#5e53a4"
     iot:
-      image: /images/post/prueba3.png
+      image: /images/blog/category/devops.png
       color: "#eddd38"
     monitoreo:
-      image: /images/post/monitoreo.png
+      image: /images/blog/category/monitoreo.png
       color: "#ee395f"
     noticias:
-      image: /images/post/prueba3.png
+      image: /images/blog/category/noticias.png
       color: "#eddd38"
     redes:
-      image: /images/post/redes2.png
+      image: /images/blog/category/redes.png
       color: "#88d3de"
     servidores:
-      image: /images/post/server3.png
+      image: /images/blog/category/server.png
       color: "#eddd38"
     software:
-      image: /images/post/blog_images_software.svg
+      image: /images/blog/category/software.svg
       color: "#04a9d3"
     sistemas operativos:
-      image: /images/post/blog_images_software.svg
+      image: /images/blog/category/software.svg
       color: "#04a9d3"
   authors:
     leandro:
