@@ -9,12 +9,13 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/blog"> Blog<span class="sr-only">(current)</span></a></li>
+        <li><a href="/blog">Todo<span class="sr-only">(current)</span></a></li>
+        <li><a href="/archive">Archivo<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Categorías <span class="caret"></span></a>
           <ul class="dropdown-menu">
             {% for category in site.blog.categories %}
-            <li><a href="/category/{{ category[0] }}.html">{{ category[0] }}</a></li>
+            <li><a href="/category/{{ category[0] }}">{{ category[0] }}</a></li>
             {% endfor %}
           </ul>
         </li>

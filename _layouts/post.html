@@ -28,7 +28,9 @@ layout: blog_default
             <header class="heading">
               <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
               <p class="post-meta">
-              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+              {% assign month_number = page.date | date: "%-m" %}
+              {% include date_mapping.i18n %}
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%d' }} de {{ month }} de {{ page.date | date: '%Y' }}</time>
               </p>
             </header>
             <div class="post-content" itemprop="articleBody">
@@ -64,7 +66,7 @@ layout: blog_default
                   {% if page.tags %}
                     <div class="post-meta tags">Etiquetas:
                     {% for tag in page.tags %}
-                      <a href="/tag/{{ tag }}.html" title="Ver entradas etiquetadas con &quot;{{ tag }}&quot;">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
+                      <a href="/tag/{{ tag }}" title="Ver entradas etiquetadas con &quot;{{ tag }}&quot;">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
                     {% endfor %}
                     </div>
                   {% endif %}

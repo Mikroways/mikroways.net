@@ -43,7 +43,9 @@ layout: blog_default
                       <div class="row">
                         <div class="col-md-12">
                           <h5 class="post-author">
-                            <span class=""><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>  
+                            {% assign month_number = post.date | date: "%-m" %}
+                            {% include date_mapping.i18n %}
+                            <span class=""><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: '%d' }} {{ month_short }} {{ post.date | date: '%Y'  }}</span>
                           </h5>
                         </div>
                       </div>
