@@ -18,8 +18,8 @@ languages: ["es", "en"]
 blog:
   categories:
     devops:
-      image: /images/post/devops2.png
-      color: "#00324b"
+      image: /images/post/devops.png
+      color: "#5e53a4"
     iot:
       image: /images/post/prueba3.png
       color: "#eddd38"
