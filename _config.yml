@@ -27,8 +27,8 @@ blog:
       image: /images/post/monitoreo.png
       color: "#ee395f"
     noticias:
-      image: /images/post/prueba3.png
-      color: "#eddd38"
+      image: /images/post/noticias.png
+      color: "#f26822"
     redes:
       image: /images/post/redes2.png
       color: "#88d3de"
