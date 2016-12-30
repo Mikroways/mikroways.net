@@ -3,7 +3,7 @@ date: 2009-10-07 09:00:00 -3000
 layout: post
 title: Escoger una contraseña inteligente
 authors: leandro
-categories: noticias
+categories: software
 tags: [contraseñas, mail, seguridad]
 permalink: /2009/10/07/escoger-una-contrasena-inteligente/
 
