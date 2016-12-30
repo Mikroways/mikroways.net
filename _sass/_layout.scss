@@ -311,7 +311,7 @@ h1.page-heading-service {
 
 div.post-meta.tags {
   margin-top: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   color: #369ED8;
 }
 
@@ -2002,4 +2002,19 @@ pre {
 
 .archive li {
   padding-left: 3em;
+}
+
+.nav-arrows {
+  font-size: 0.8em;
+  padding-bottom: 4em;
+
+  .nav-left {
+    text-align: left;
+    float: left;
+  }
+
+  .nav-right {
+    text-align: right;
+    float: right;
+  }
 }

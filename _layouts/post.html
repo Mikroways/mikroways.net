@@ -73,6 +73,18 @@ layout: blog_default
 
 
                 </div>
+                <div class="nav-arrows">
+                  {% if page.previous %}
+                  <div class="nav-left">
+                    <a href="{{ page.previous.url }}"><i class="fa fa-chevron-left" aria-hidden="true"></i>  {{ page.previous.title }}</a>
+                  </div>
+                  {% endif %}
+                  {% if page.next %}
+                  <div class="nav-right">
+                    <a href="{{ page.next.url }}">{{ page.next.title }}  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                  </div>
+                  {% endif %}
+                </div>
                 <div class="post-comments">
                   <div id="disqus_thread">
                     <script>
