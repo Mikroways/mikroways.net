@@ -18,29 +18,29 @@ languages: ["es", "en"]
 blog:
   categories:
     devops:
-      image: /images/post/prueba3.png
+      image: /images/post/devops.png
       color: "#eddd38"
     iot:
       image: /images/post/prueba3.png
       color: "#eddd38"
     monitoreo:
-      image: /images/post/prueba3.png
-      color: "#eddd38"
+      image: /images/post/monitoreo.png
+      color: "#ee395f"
     noticias:
       image: /images/post/prueba3.png
       color: "#eddd38"
     redes:
-      image: /images/post/prueba1.png
-      color: "#6bd9ed"
+      image: /images/post/redes2.png
+      color: "#88d3de"
     servidores:
-      image: /images/post/blog_images_software.svg
-      color: "#04a9d3"
+      image: /images/post/server3.png
+      color: "#eddd38"
     software:
       image: /images/post/blog_images_software.svg
       color: "#04a9d3"
     sistemas operativos:
-      image: /images/post/prueba3.png
-      color: "#eddd38"
+      image: /images/post/blog_images_software.svg
+      color: "#04a9d3"
   authors:
     leandro:
       name: Leandro Di Tommaso
