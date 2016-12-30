@@ -14,7 +14,7 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Categorías <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            {% for category in site.blog.categories %}
+            {% for category in site.categories %}
             <li><a href="/category/{{ category[0] }}">{{ category[0] }}</a></li>
             {% endfor %}
           </ul>
