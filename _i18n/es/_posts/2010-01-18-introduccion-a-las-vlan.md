@@ -20,14 +20,14 @@ lógico. La primera de ellas no utiliza VLANs, con lo cual necesita de diferente
 switches para garantizar una correcta separación entre las redes. La segunda
 utiliza el mismo switch pero con un esquema de VLANs.
 
-![Topología de ejemplo](/images/blog/vlanpost-novlan.png)
+![Figura 1](/images/blog/vlanpost-novlan.png)
 
-![Topología de ejemplo](/images/blog/vlanpost-convlan.jpg)
+![Figura 2](/images/blog/vlanpost-convlan.jpg)
 
 Si vemos la configuración del switch en la figura 2 podemos abstraerlo en tres
 switches diferentes, como muestra la figura 3.
 
-![Topología de ejemplo](/images/blog/vlanpost-switch.png)
+![Figura 3](/images/blog/vlanpost-switch.png)
 
 Por su naturaleza, una VLAN puede formarse también a partir de múltiples
 segmentos de LAN. Esto permiten que estaciones de trabajo ubicadas físicamente
@@ -35,7 +35,7 @@ en lugares diferentes pueden trabajar en la misma red lógica (es decir, con el
 mismo direccionamiento de red), como si estuvieran conectadas al mismo switch.
 La figura 4 muestra un ejemplo de este caso.
 
-![Topología de ejemplo](/images/blog/vlanpost-trunked.png)
+![Figura 4](/images/blog/vlanpost-trunked.png)
 
 ## Funcionamiento de las VLAN
 

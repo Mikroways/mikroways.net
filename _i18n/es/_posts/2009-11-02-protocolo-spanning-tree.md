@@ -16,7 +16,7 @@ puede verse una red LAN redundante y cómo se forma un ciclo en ella.
 
 <!-- more -->
 
-![Topología de ejemplo](/images/blog/red-lan-redundante.png)
+![Red LAN con ciclo](/images/blog/red-lan-redundante.png)
 
 
 Si bien la red anterior es redundante los ciclos son altamente perjudiciales

@@ -22,7 +22,7 @@ configuración de los casos aquí mencionados.
 
 ## Router sin trunk (ruteo tradicional)
 
-![Topología de ejemplo](/images/blog/routing-vlan.png)
+![Router sin trunk](/images/blog/routing-vlan.png)
 
 Como se ve en el diagrama, el ruteo sin trunk utiliza una interfaz del router
 por cada VLAN. Lo mismo hace con las interfaces del switch. La ventaja de este
@@ -34,7 +34,7 @@ conectar un cable adicional entre el switch y el router.
 
 ## Router con trunk (router on-a-stick)
 
-![Topología de ejemplo](/images/blog/routing-vlan-on-a-stick.png)
+![Router con trunk](/images/blog/routing-vlan-on-a-stick.png)
 
 Voilà! Esto se ve mucho mejor, ¿lo les parece? Con una configuración de router
 on-a-stick se optimiza la utilización de recursos, dado que no importa si se
@@ -48,7 +48,7 @@ capacidad que los enlaces entre el switch y el resto de los hosts.
 
 ## Switch de capa 3
 
-![Topología de ejemplo](/images/blog/routing-vlan-swl3.png)
+![Ruteo con switch de capa 3](/images/blog/routing-vlan-swl3.png)
 
 A nivel físico este esquema es idéntico al de router on-a-stick, aunque la
 diferencia está dada por el rendimiento y por la implementación. Con respecto a
