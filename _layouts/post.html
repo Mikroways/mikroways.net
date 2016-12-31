@@ -1,44 +1,109 @@
 ---
 layout: blog_default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <div class="row">
-    <div class="container">
-      <header class="heading">
-        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-        <p class="post-meta">
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-        </p>
-      </header>
-      <div class="post-content" itemprop="articleBody">
-        <div class="content">
-          <div class="author-bio">
-            <div class="gravatar-style">
-              {% for username in page.usernames %}
-                <img class="gravatar" src="https://avatars3.githubusercontent.com/{{ username | to_gravatar }}?s=68" />
-                <div class="row">
-                  <div class="col-md-12 col-xs-12 post-meta-post">
-                    <p class="author">
-                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                      <span itemprop="name">
-                        <b>Autor</b><br> 
-                        <a href="https://github.com/{{ username }}">{{ username }}</a>
-                      </span>
-                    </span>
-                    </p>
-                  </div>
-                </div>
-              {% endfor%}
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="content-style">
-            {{ content }}
-          </div>
-        </div>
+{% assign cat = page.categories | first %}
+{% assign color = site.blog.categories[cat].color %}
+{% assign image = site.blog.categories[cat].image %}
+<section class="post-page-image" style="background-color: {{ color }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <figure>
+          <img src="{{ image }}">
+        </figure>
       </div>
     </div>
   </div>
+</section>
 
-</article>
+<div class="container blog-container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <div class="row">
+          <div class="container">
+            <header class="heading">
+              <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+              <p class="post-meta">
+              {% assign month_number = page.date | date: "%-m" %}
+              {% include date_mapping.i18n %}
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%d' }} de {{ month }} de {{ page.date | date: '%Y' }}</time>
+              </p>
+            </header>
+            <div class="post-content" itemprop="articleBody">
+              <div class="content">
+                <div class="author-bio">
+                  <div class="gravatar-style">
+                    <div class="col-md-12 chevron-back">
+                      <a href="/blog"><i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i></a>
+                    </div>
+
+                    {% for author in page.authors %}
+                    {% assign author_data = site.blog.authors[author] %}
+                    <img class="gravatar" src="https://avatars3.githubusercontent.com/{{ author_data['github_username'] | to_gravatar }}?s=112" />
+                    <div class="row">
+                      <div class="col-md-12 col-xs-12 post-meta-post">
+                        <p class="author">
+                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                          <span itemprop="name">
+                            <b>Autor</b><br> 
+                            <a target="_blank" href="https://github.com/{{ author_data['github_username'] }}">{{ author_data['name'] }}</a>
+                          </span>
+                        </span>
+                        </p>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="content-style">
+                  {{ content }}
+
+                  {% if page.tags %}
+                    <div class="post-meta tags">Etiquetas:
+                    {% for tag in page.tags %}
+                      <a href="/tag/{{ tag }}" title="Ver entradas etiquetadas con &quot;{{ tag }}&quot;">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
+                    {% endfor %}
+                    </div>
+                  {% endif %}
+
+
+                </div>
+                <div class="nav-arrows">
+                  {% if page.previous %}
+                  <div class="nav-left">
+                    <a href="{{ page.previous.url }}"><i class="fa fa-chevron-left" aria-hidden="true"></i>  {{ page.previous.title }}</a>
+                  </div>
+                  {% endif %}
+                  {% if page.next %}
+                  <div class="nav-right">
+                    <a href="{{ page.next.url }}">{{ page.next.title }}  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                  </div>
+                  {% endif %}
+                </div>
+                <div class="post-comments">
+                  <div id="disqus_thread">
+                    <script>
+                      (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = '//mikroways.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                      })();
+                    </script>
+                    <noscript>Se requiere JavaScript para ver los comentarios.</noscript>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </article>
+
+        </div>
+    </div>
+  </div>

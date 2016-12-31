@@ -1,0 +1,42 @@
+{% capture hide %}
+
+{% case month_number %}
+  {% when '1' %}
+    {% capture month %}enero{% endcapture %}
+    {% capture month_short %}ene{% endcapture %}
+  {% when '2' %}
+    {% capture month %}febrero{% endcapture %}
+    {% capture month_short %}feb{% endcapture %}
+  {% when '3' %}
+    {% capture month %}marzo{% endcapture %}
+    {% capture month_short %}mar{% endcapture %}
+  {% when '4' %}
+    {% capture month %}abril{% endcapture %}
+    {% capture month_short %}abr{% endcapture %}
+  {% when '5' %}
+    {% capture month %}mayo{% endcapture %}
+    {% capture month_short %}may{% endcapture %}
+  {% when '6' %}
+    {% capture month %}junio{% endcapture %}
+    {% capture month_short %}jun{% endcapture %}
+  {% when '7' %}
+    {% capture month %}julio{% endcapture %}
+    {% capture month_short %}jul{% endcapture %}
+  {% when '8' %}
+    {% capture month %}agosto{% endcapture %}
+    {% capture month_short %}ago{% endcapture %}
+  {% when '9' %}
+    {% capture month %}septiembre{% endcapture %}
+    {% capture month_short %}sep{% endcapture %}
+  {% when '10' %}
+    {% capture month %}octubre{% endcapture %}
+    {% capture month_short %}oct{% endcapture %}
+  {% when '11' %}
+    {% capture month %}noviembre{% endcapture %}
+    {% capture month_short %}nov{% endcapture %}
+  {% when '12' %}
+    {% capture month %}diciembre{% endcapture %}
+    {% capture month_short %}dic{% endcapture %}
+{% endcase %}
+
+{% endcapture %}

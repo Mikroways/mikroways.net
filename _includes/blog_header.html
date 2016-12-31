@@ -1,12 +1,6 @@
 <nav class="navbar navbar-default navbar-fixed-top navbar-blog">
   <div class="container container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
       <a class="navbar-brand" href="/">
         <object class="logo-mikroways-blanco" data="/images/mikroways-blanco.svg" type="image/svg+xml">
           <img src="/images/mikroways-blanco.png" alt="Mikroways">
@@ -15,21 +9,17 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"> Todo <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Destacados</a></li>
+        <li><a href="/blog">Todo<span class="sr-only">(current)</span></a></li>
+        <li><a href="/archive">Archivo<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Categorías <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Categorías <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Redes</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Software</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Sistemas Operativos</a></li>
+            {% for category in site.categories %}
+            <li><a href="/category/{{ category[0] }}">{{ category[0] }}</a></li>
+            {% endfor %}
           </ul>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
-
