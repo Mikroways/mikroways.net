@@ -418,13 +418,13 @@ div.post-meta.tags {
     transform: scale(1.1);
   }
 }
- 
+
 ul.sub-navbar-menu {
   li {
     display: inline-block;
     a {
       i {
-        padding: 0 1em 0 0;        
+        padding: 0 1em 0 0;
       }
     }
   }
@@ -539,7 +539,7 @@ ul.sub-navbar-menu {
 
 .single-post {
   margin-top: 1em;
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
 }
 
 header.post-header {
@@ -550,7 +550,7 @@ header.post-header {
   margin-top: 0em;
   margin-bottom: 1.8em;
   top: -1em;
-  margin-right: 1.1em; 
+  margin-right: 1.1em;
 }
 
 a.post-link-button {
@@ -558,7 +558,7 @@ a.post-link-button {
   background-color: #FFFFFF;
   padding: 0.4em 0.8em 0.4em 0.8em;
   transition: 300ms ease-in-out;
-  border: solid 0.1em #5FBED0; 
+  border: solid 0.1em #5FBED0;
 }
 
 a.post-link-button:hover {
@@ -566,7 +566,7 @@ a.post-link-button:hover {
   -moz-border-radius: 200px 200px 200px 200px;
   -webkit-border-radius: 200px 200px 200px 200px;
   border: solid 0.1em #5FBED0;
-  background-color: #5FBED0; 
+  background-color: #5FBED0;
 }
 
 a.post-link-button i.more-post {
@@ -574,11 +574,11 @@ a.post-link-button i.more-post {
   color: #5FBED0;
   text-decoration: none;
   font-style: normal;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 a:hover.post-link-button i.more-post {
-  color: white; 
+  color: white;
 }
 
 /**/
@@ -621,7 +621,7 @@ a:hover.post-link-button i.more-post {
 .main-menu-index {
   width: 100%;
   text-align: center;
-  background:rgba(0,0,0,0); 
+  background:rgba(0,0,0,0);
 }
 
 .main-menu-index ul {
@@ -675,20 +675,20 @@ object.logo-mikroways-blanco {
 
 
 a.svg1:after {
-  content: ""; 
-  position: relative; 
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
+  content: "";
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
 }
 
 a.svg:after {
-  content: ""; 
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
 }
 
@@ -816,10 +816,10 @@ a.svg:after {
 }
 
 .service a.computacion {
-  background-color: #0276BC; 
+  background-color: #0276BC;
   transition: 300ms ease-in-out;
   &:hover{
-    background-color: rgba(2,118,188,0.54); 
+    background-color: rgba(2,118,188,0.54);
   }
 }
 
@@ -832,26 +832,26 @@ a.svg:after {
 }
 
 .service a.outsourcing {
-  background-color: #7DC142; 
+  background-color: #7DC142;
   transition: 300ms ease-in-out;
   &:hover{
-    background-color: rgba(125,193,66,0.54); 
+    background-color: rgba(125,193,66,0.54);
   }
 }
 
 .service a.monitoreo {
-  background-color: #00A550; 
+  background-color: #00A550;
   transition: 300ms ease-in-out;
   &:hover{
-    background-color: rgba(0,165,80,0.54); 
+    background-color: rgba(0,165,80,0.54);
   }
 }
 
 .service a.capacitacion {
-  background-color: #009A4A; 
+  background-color: #009A4A;
   transition: 300ms ease-in-out;
   &:hover{
-    background-color: rgba(0,154,74,0.54); 
+    background-color: rgba(0,154,74,0.54);
   }
 }
 
@@ -924,7 +924,7 @@ h3.partner-title.chef {
 }
 
 h3.partner-title.amazon {
-  text-align: left !important; 
+  text-align: left !important;
   font-size: 2em;
   font-weight: 700;
   color: #727477;
@@ -984,7 +984,7 @@ h3.partner-title.amazon {
 }
 
 .index-body {
-  
+
 }
 
 #partnership-title{
@@ -1246,7 +1246,7 @@ i.chevron-down {
 }
 
 
-hr { 
+hr {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -1380,7 +1380,7 @@ p.verticaline {
 
 .company-columns {
   text-align: center;
-  
+
   p {
     text-align: justify;
     text-justify: inter-word;
@@ -1392,7 +1392,7 @@ p.verticaline {
     font-size: 0.9em;
     padding: 2em;
   }
-  
+
   i.signal {
     margin-top: 1.3em;
     border-radius: 200px 200px 200px 200px;
@@ -1499,8 +1499,8 @@ object.scroll-style {
 }
 
 .map-overlay {
-  background:transparent; 
-  position:relative; 
+  background:transparent;
+  position:relative;
   width: 100%;
   height:480px;
   top:480px;
@@ -1558,7 +1558,7 @@ b, strong {
   padding: 0;
   overflow: hidden;
   display: inline-flex;
-  li { 
+  li {
     float: left;
     margin: 0.3em;
     a {
@@ -1566,7 +1566,7 @@ b, strong {
       color: white;
       text-align: center;
       text-decoration: none;
-      font-size: 0.6em;      
+      font-size: 0.6em;
       i.facebook {
         padding: 1em 1.1em;
         border-radius: 200px 200px 200px 200px;
@@ -1669,7 +1669,7 @@ b, strong {
   .main-menu ul li.menu-item a:hover {
     border-bottom: 0.2em solid;
   }
-  
+
   .main-menu {
     padding-left: 0;
   }
@@ -1692,7 +1692,7 @@ b, strong {
       }
     }
   }
-  
+
   h1.slogan {
     font-size: 1em;
   }
@@ -1702,7 +1702,7 @@ b, strong {
   }
 
   .wrapper.index p a {
-    margin-right: 0; 
+    margin-right: 0;
   }
 
   .btn {
@@ -1725,9 +1725,9 @@ b, strong {
   }
 
   .service-row {
-    margin-bottom: 0em; 
+    margin-bottom: 0em;
   }
-  
+
   .service {
     margin-bottom: 2em;
   }
@@ -1764,7 +1764,7 @@ b, strong {
       text-align: center;
     }
   }
-  
+
   img.partnerships {
     width: 80%;
     margin-bottom: 2.5em;
@@ -1788,7 +1788,7 @@ b, strong {
   /* Footer */
 
   .footer-icons ul li {
-    margin-right: 0; 
+    margin-right: 0;
     /*OJO ESTO!*/
   }
 
@@ -1863,7 +1863,7 @@ p.author {
 
 .content > * {
   max-width: 710px;
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -1942,7 +1942,7 @@ header.heading {
   margin-bottom: 1.5em;
   margin-top: 0.3em;
   &:hover {
-    color: gray;    
+    color: gray;
   }
 }
 
@@ -2013,5 +2013,43 @@ pre {
   .nav-right {
     text-align: right;
     float: right;
+  }
+}
+body.error-pages {
+
+  background-repeat: no-repeat;
+  background-image: url("/images/errors/404_invert.png");
+  background-color: #0276BC;
+  background-size: cover;
+  z-index: 0;
+}
+
+.error-header {
+  margin-top: 3em;
+  margin-left: 1em;
+  text-align: center;
+  h1 {
+    font-size: 7em;
+    margin-bottom: 0;
+    color: white;
+    font-weight: 700;
+    margin-top: 1em;
+    text-shadow: 2px 2px rgba(167, 167, 167, 0.32);
+  }
+  h3 {
+    font-weight: 300;
+    font-size: 4em;
+    color: white;
+  }
+  p {
+    color: white;
+    font-size: 1.5em;
+    a {
+      text-decoration: none;
+      cursor:pointer
+      &:hover {
+        color: #8ba8ce;
+      }
+    }
   }
 }
