@@ -3,11 +3,11 @@ module TaxonomySystem
     def initialize(site, base, taxonomy, posts, dir)
       @site = site
       @base = base
-      @dir = dir
-      @name = "#{taxonomy}.html"
+      @dir = "#{dir}/#{taxonomy}"
+      @name = "index.html"
 
       process(@name)
-      read_yaml(File.join(base), 'blog.html')
+      read_yaml(File.join(base), 'blog/index.html')
       data['taxonomy_view'] = true
       data['taxonomy'] = taxonomy
       data['posts'] = posts
