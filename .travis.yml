@@ -1,0 +1,24 @@
+language: ruby
+cache: bundler
+rvm:
+- 2.3.1
+branches:
+  only:
+  - master
+before_install:
+- sudo apt-get -qq update
+- sudo pip install awscli
+script:
+- bundle exec jekyll build
+deploy:
+  provider: s3
+  skip_cleanup: true
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: $AWS_REGION
+  bucket: mikroways.net
+  local_dir: _site
+  acl: public_read
+after_deploy:
+- aws configure set preview.cloudfront true
+- aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
