@@ -6,6 +6,7 @@ authors: leandro
 categories: [ sistemas operativos ]
 tags: [debian, filesystems, linux, lvm, ubuntu]
 permalink: /2010/06/16/lvm-crear-y-expandir-volumenes/
+series: uso-de-lvm
 
 ---
 
