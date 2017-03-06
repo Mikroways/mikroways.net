@@ -4,15 +4,15 @@ module Jekyll
     def number_to_ordinal(position)
       ordinals = {
         1 => 'primer',
-        2 => 'segundo',
+        2 => 'segunda',
         3 => 'tercer',
-        4 => 'cuarto',
-        5 => 'quinto',
-        6 => 'sexto',
-        7 => 'séptimo',
-        8 => 'octavo',
-        9 => 'noveno',
-        10 => 'décimo'
+        4 => 'cuarta',
+        5 => 'quinta',
+        6 => 'sexta',
+        7 => 'séptima',
+        8 => 'octava',
+        9 => 'novena',
+        10 => 'décima'
       }
       ordinals[position]
     end
@@ -45,22 +45,24 @@ module Jekyll
           end
         end.compact
 
-        idx = collection.find_index { |p| p.id == page["id"] } + 1
+        if collection.size > 1
+          idx = collection.find_index { |p| p.id == page["id"] } + 1
 
-        <<-TEXT
+          <<-TEXT
 <div class="post-series">
   Esta es la #{number_to_ordinal(idx)} parte de una serie de #{number_name(collection.size)} posts
   <ol>
-        #{collection.each_with_index.map do |item, i|
-        if (i + 1) == idx
-          "<li>#{item.data["title"]}</li>"
-        else
-          "<li><a href=\"#{item.url}\">#{item.data["title"]}</a></li>"
-        end
-        end .join("") }
+          #{collection.each_with_index.map do |item, i|
+          if (i + 1) == idx
+            "<li>#{item.data["title"]}</li>"
+          else
+            "<li><a href=\"#{item.url}\">#{item.data["title"]}</a></li>"
+          end
+          end .join("") }
   </ol>
 </div>
         TEXT
+        end
       end
     end
   end
