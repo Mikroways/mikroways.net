@@ -17,7 +17,7 @@ a un muy bajo costo. Este blog y el propio sitio de Mikroways utilizan la
 metodología que se explica aquí.
 <!-- more -->
 
-Para este tutorial se utilizaré como ejemplo [mi blog
+Para este tutorial utilizaré como ejemplo [mi blog
 personal](https://leoditommaso.io), un sitio estático desarrollado con Jekyll.
 Cabe aclarar que la metodología aquí explicada puede replicarse para cualquier
 otro sitio estático; sólo cambiará la forma de hacer el deploy.
