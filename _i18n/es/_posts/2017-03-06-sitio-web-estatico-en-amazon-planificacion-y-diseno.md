@@ -5,7 +5,7 @@ title: "Sitio web estático en Amazon: Planificación y diseño"
 authors: leandro
 categories: devops
 tags: [amazon, aws, s3, cloudfront, travis, route53, github, web, servicios, jekyll, cloud computing]
-permalink: /2017/03/06/sitios-web-estatico-en-amazon-planificacion-y-diseno/
+permalink: /2017/03/06/sitio-web-estatico-en-amazon-planificacion-y-diseno/
 series: sitio-web-estatico-en-amazon
 
 ---
