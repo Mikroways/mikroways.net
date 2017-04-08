@@ -4,7 +4,6 @@
   <body>
     {% include first_level_menu.html %}
     {{ content }}
-    {% include header.html %}
     <div class="fullscreen background">
       <div class="content-a">
         <div class="content-b">
@@ -17,6 +16,9 @@
         </div>
       </div>
     </div>
+    <nav class="navbar navbar-default hidden-xs" data-spy="affix" data-offset-top="38">
+    {% include header.html %}
+    </nav>
     {% include contacts.html %}
     {% include footer.html %}
     {% include js.html %}
