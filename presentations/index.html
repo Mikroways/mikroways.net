@@ -1,0 +1,46 @@
+---
+layout: blog_default
+---
+
+<div class="col-md-12">
+  <div class="page-content blog-content" id="content">
+    <div class="post-data">
+      <div class="container blog-container">
+        {% for presentation in site.translations['es']['presentations'] %}
+        {% assign url = 'http://' | append: presentation[0] | replace: '_', '-' | append: '.' | append: site.presentations.domain %}
+        <div class="col-md-4 col-xs-12 post-item">
+          <div class="post-list">
+            <div class="single-post">
+              <div class="post-style">
+                <li>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <a href="{{ url }}" target="_blank">
+                        <figure>
+                          <img src="/images/presentations/{{ presentation[0] }}.png" alt="Imagen de {{ presentation[1]['title'] }}">
+                        </figure>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 data-container">
+                      <div class="col-md-12">
+                        <h2>
+                          <a class="post-link" href="{{ url }}">{{ presentation[1]['title'] }}</a>
+                        </h2>
+                        <div class="post-content-truncate">
+                          {{ presentation[1]['description'] }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -52,6 +52,12 @@ company:
     fourth: Poder captar nuevos clientes en base a <b>recomendaciones</b> y casos de éxito <b>demostrables.</b>
   who_are_we: ¿quiénes <b>somos?</b>
 
+presentations:
+  devops:
+    description: Introducción a Devops, en la que se donde se explica qué es, por qué surge, cuál es la problemática que soluciona y el impacto que tiene en las áreas de TI. Además se comentan algunas herramientas de Devops.
+  docker_intro:
+    description: Introducción a Docker, en la que se lleva a la audiencia desde el concepto más primitivo sobre el que se basa Docker hasta temas algo más avanzados como el uso de volúmenes, el manejo de docker-compose y el uso en clusters para producción.
+
 contact_form:
   name: Nombre
   surname: Apellido
