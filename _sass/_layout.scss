@@ -385,11 +385,11 @@ div.post-meta.tags {
 .first-level-menu ul li span a {
   color: white;
   text-decoration: none;
-  padding: 1em;
+  padding: 1em 1em 0.5em 1em;
   transition: 300ms ease-in-out;
   &:hover {
     background-color: #0477BD;
-    padding: 1em;
+    padding: 1em 1em 0.5em 1em;
   }
 }
 
