@@ -29,9 +29,9 @@ services:
   devops:
     name: devops
     short: Aplicando metodologías ágiles en TI, buscamos estandarizar y automatizar procesos para brindar soluciones de alta calidad, aumentando la productividad y reduciendo costos y tiempos de respuesta.
-  outsourcing:
-    name: outsourcing
-    short: Nuestros clientes logran potenciar su propio negocio al concentrar sus esfuerzos en el mismo, confiando la gestión de su infraestructura de TI al equipo de profesionales de Mikroways.
+  software_development:
+    name: desarrollo de software
+    short: Nuestros clientes logran potenciar su productividad con soluciones de software de alta calidad que dinamizan, agilizan y automatizan sus procesos, permitiéndoles concentrar sus esfuerzos en el núcleo de su negocio.
   monitoring:
     name: monitoreo inteligente
     short: Con la recolección de datos estadísticos y la definición de métricas, Mikroways ayuda a que sus clientes puedan tomar decisiones informadas, al tiempo que logra implementar un sistema de alertas tempranas que permita actuar de forma proactiva, evitando problemas potenciales.

@@ -513,7 +513,7 @@ ul.sub-navbar-menu {
   .iot {
     background-color: #0276BC;
   }
-  .monitoreo {
+  .consultancy {
     background-color: #ee395f;
   }
   .noticias {
@@ -728,19 +728,19 @@ a.svg:after {
   color: #369ED8;
 }
 
-.service i.computacion {
+.service i.smart_monitoring {
   color: #0276BC;
 }
 
-.service i.consultoria {
+.service i.software_development {
   color: #154D94;
 }
 
-.service i.outsourcing {
+.service i.cloud_computing {
   color: #7DC142;
 }
 
-.service i.monitoreo {
+.service i.consultancy {
   color: #1BB14B;
 }
 
@@ -758,20 +758,20 @@ a.svg:after {
   color: #369ED8;
 }
 
-.service h2.computacion {
+.service h2.smart_monitoring {
   color: #0276BC;
   padding-left: 0em;
 }
 
-.service h2.consultoria {
+.service h2.software_development {
   color: #154D94;
 }
 
-.service h2.outsourcing {
+.service h2.cloud_computing {
   color: #7DC142;
 }
 
-.service h2.monitoreo {
+.service h2.consultancy {
   color: #1BB14B;
 }
 
@@ -815,15 +815,15 @@ a.svg:after {
   }
 }
 
-.service a.computacion {
-  background-color: #0276BC; 
+.service a.smart_monitoring {
+  background-color: #0276BC;
   transition: 300ms ease-in-out;
   &:hover{
     background-color: rgba(2,118,188,0.54); 
   }
 }
 
-.service a.consultoria {
+.service a.software_development {
   background-color: #154D94;
   transition: 300ms ease-in-out;
   &:hover{
@@ -831,7 +831,7 @@ a.svg:after {
   }
 }
 
-.service a.outsourcing {
+.service a.cloud_computing {
   background-color: #7DC142; 
   transition: 300ms ease-in-out;
   &:hover{
@@ -839,7 +839,7 @@ a.svg:after {
   }
 }
 
-.service a.monitoreo {
+.service a.consultancy {
   background-color: #00A550; 
   transition: 300ms ease-in-out;
   &:hover{
@@ -1732,7 +1732,7 @@ b, strong {
     margin-bottom: 2em;
   }
 
-  .service h2.computacion {
+  .service h2.smart_monitoring {
     padding-left: 0em;
   }
 
