@@ -22,7 +22,7 @@ common_words:
 services:
   cloud_computing:
     name: computación en la nube
-    short: El acceso a recursos de computación de forma elástica, permite a las organizaciones contar con la infraestructura necesaria en todo momento, optimizando costos y reduciendo los esfuerzos en la gestión de su infraestructura.
+    short: El acceso a recursos de computación de forma elástica permite a las organizaciones contar con la infraestructura necesaria en todo momento, optimizando costos y reduciendo los esfuerzos en la gestión de su infraestructura.
   consultancy:
     name: consultoría
     short: Por medio de un análisis detallado de cada caso específico, logramos diseñar e implementar soluciones profesionales a la medida de nuestros clientes.
