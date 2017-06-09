@@ -30,7 +30,7 @@ services:
     short: By applying agile methodologies in IT, we intend to standardize and automatize processes to deliver high quality solutions, increasing productivity and reducing costs and response times.
   software_development:
     name: software development
-    short: Our clients manage to increase their productivity with high quality software solutions which speed up and automatize their processes enabling them to concentrate their efforts in the core of their business.
+    short: Providing high quality and custom made software, we automatize processes and daily tasks, enabling our clientes to raise their productivity by concentrating every effort in the core of their business.
   monitoring:
     name: smart monitoring
     short: With the collection of statistical data and the metric definition, Mikroways helps their clients to take informed decisions, at the same time as it manages to implement an early warning system that allows acting proactively, avoiding potential problems.
