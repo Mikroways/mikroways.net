@@ -1,8 +1,8 @@
 # Site settings
 title: Mikroways
 email: contacto@mikroways.net
-baseurl: ""
-url: "www.mikroways.net"
+url: "https://www.mikroways.net"
+canonical_url: "https://www.mikroways.net"
 social:
   facebook: "https://facebook.com/mikroways"
   github: "https://github.com/mikroways"
