@@ -1,6 +1,8 @@
 html:
   lang: en
 
+description: Mikroways is an innovative and proactive company, which combines high quality solutions with a personalized customer service.
+
 menu:
   blog: Blog
   clients: clients
@@ -9,14 +11,14 @@ menu:
   partnerships: partnerships
   services: services
 
+homepage:
+  more: Know more
+  contact_us: Contact us!
+
 common_words:
   our_female: our
   our_male: our
   objectives: objectives
-
-homepage:
-  more: Know more
-  contact_us: Contact us!
 
 services:
   cloud_computing:

@@ -1,10 +1,6 @@
 # Site settings
 title: Mikroways
 email: contacto@mikroways.net
-description: >
-  Mikroways es una empresa joven, que brinda soluciones en el campo de la tecnolog&iacute;a
-  de la informaci&oacute;n y que se nutre de profesionales altamente capacitados y con
-  amplia experiencia en el rubro.
 baseurl: ""
 url: "http://www.mikroways.net"
 social:
