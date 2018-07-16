@@ -30,6 +30,9 @@ services:
   devops:
     name: devops
     short: By applying agile methodologies in IT, we intend to standardize and automatize processes to deliver high quality solutions, increasing productivity and reducing costs and response times.
+  outsourcing:
+    name: outsourcing
+    short: Our clients manage to strengthen their business concentrating their efforts in it; trusting the management of their IT infrastructure to Mikroways’ professional team.
   software_development:
     name: software development
     short: Providing high quality and custom made software, we automatize processes and daily tasks, enabling our clientes to raise their productivity by concentrating every effort in the core of their business.

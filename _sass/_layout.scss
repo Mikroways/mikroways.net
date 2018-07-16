@@ -732,11 +732,11 @@ a.svg:after {
   color: #0276BC;
 }
 
-.service i.software_development {
+.service i.cloud_computing {
   color: #154D94;
 }
 
-.service i.cloud_computing {
+.service i.outsourcing {
   color: #7DC142;
 }
 
@@ -744,7 +744,7 @@ a.svg:after {
   color: #1BB14B;
 }
 
-.service i.capacitacion {
+.service i.training {
   color: #008A49;
 }
 
@@ -763,11 +763,11 @@ a.svg:after {
   padding-left: 0em;
 }
 
-.service h2.software_development {
+.service h2.cloud_computing {
   color: #154D94;
 }
 
-.service h2.cloud_computing {
+.service h2.outsourcing {
   color: #7DC142;
 }
 
@@ -775,7 +775,7 @@ a.svg:after {
   color: #1BB14B;
 }
 
-.service h2.capacitacion {
+.service h2.training {
   color: #008A49;
 }
 
@@ -823,7 +823,7 @@ a.svg:after {
   }
 }
 
-.service a.software_development {
+.service a.cloud_computing {
   background-color: #154D94;
   transition: 300ms ease-in-out;
   &:hover{
@@ -831,7 +831,7 @@ a.svg:after {
   }
 }
 
-.service a.cloud_computing {
+.service a.outsourcing {
   background-color: #7DC142; 
   transition: 300ms ease-in-out;
   &:hover{
@@ -847,7 +847,7 @@ a.svg:after {
   }
 }
 
-.service a.capacitacion {
+.service a.training {
   background-color: #009A4A; 
   transition: 300ms ease-in-out;
   &:hover{
