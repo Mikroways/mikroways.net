@@ -55,6 +55,9 @@ company:
     third: We want our company to be known by the <b>quality</b> and the <b>compliance</b> of its works.
     fourth: Being able to acquire new clients based on <b>recommendations</b> and <b>succesful cases.</b>
   who_are_we: who <b>are we?</b>
+  quality_policy:
+    title: Quality policy
+    statement: At Mikroways we are committed to implement and maintain our ISO 9001:2015 quality management system applied to <b>consultancy, design, implementation, transference and support regarding information management and tailored technological infraestructure solutions, endorsed by our extensive experience and the adoption of IT industry's best practices</b>. We are all enthusiastic about reaching our customers' satisfaction and contributing to their own growth; that is why we also accompany them by providing training in those areas in which we specialise. In much the same way, we promote our processes' continual improvement, obeying all legal requirements applicable.
 
 contact_form:
   name: Name

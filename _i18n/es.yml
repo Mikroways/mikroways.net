@@ -56,6 +56,9 @@ company:
     third: Que nuestra empresa sea conocida por la <b>calidad</b> y el <b>cumplimiento</b> de sus trabajos.
     fourth: Poder captar nuevos clientes en base a <b>recomendaciones</b> y casos de éxito <b>demostrables.</b>
   who_are_we: ¿quiénes <b>somos?</b>
+  quality_policy:
+    title: Política de calidad
+    statement: Desde la empresa Mikroways nos comprometemos a implementar y mantener nuestro sistema de gestión de la calidad ISO 9001:2015 aplicado a la <b>consultoría, diseño, implementación, transferencia y soporte de soluciones de gestión de la información e infraestructura tecnológica a medida y respaldado por nuestra amplia experiencia y por las mejores prácticas de la industria TI</b>. Nos motiva lograr la satisfacción de nuestros clientes y su propio crecimiento; por ello los acompañamos también brindando capacitaciones en relación a las diferentes áreas en las que nos especializamos. A su vez, propiciamos la mejora continua de nuestros procesos, cumpliendo con los requisitos legales y reglamentarios aplicables.
 
 contact_form:
   name: Nombre
