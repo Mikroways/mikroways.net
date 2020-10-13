@@ -51,6 +51,9 @@ blog:
     mferrigno:
       name: Matias Ferrigno
       github_username: matiferrigno
+    mikroways:
+      name: Mikroways
+      github_username: mikroways
 
 include: ['_posts']
 
