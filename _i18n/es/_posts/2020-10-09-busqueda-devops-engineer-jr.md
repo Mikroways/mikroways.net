@@ -10,7 +10,8 @@ permalink: /2020/10/09/busqueda-devops-engineer-jr/
 ---
 
 Te estamos buscando para que te sumes y nos ayudes a seguir generando soluciones
-innovadoras, usando las últimas tecnologías y herramientas.
+innovadoras, usando las últimas tecnologías y herramientas de DevOps y Cloud
+Computing.
 <!-- more -->
 
 ## Resumen del puesto
@@ -70,4 +71,4 @@ Por tal motivo, el trabajo cotidiano en Mikroways requiere investigar, probar y 
 
 ## ¡Aplicá!
 
-¡Te estamos esperando! Completá la [solicitud de aplicación](https://docs.google.com/forms/d/169rhbKAcI-WYxycqjICEJ86wSmIO3VaDioa3yEn6BFQ) y te contactaremos lo antes posible.
+¡Te estamos esperando! Completá el [formulario inicial](https://docs.google.com/forms/d/169rhbKAcI-WYxycqjICEJ86wSmIO3VaDioa3yEn6BFQ) y te contactaremos lo antes posible.
