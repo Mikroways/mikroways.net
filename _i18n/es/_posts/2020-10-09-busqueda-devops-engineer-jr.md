@@ -4,7 +4,7 @@ layout: post
 title: "Búsqueda DevOps Engineer"
 authors: mikroways
 categories: devops
-tags: devops, busquedas, talentos, equipo
+tags: devops busquedas talentos equipo
 permalink: /2020/10/09/busqueda-devops-engineer-jr/
 
 ---
