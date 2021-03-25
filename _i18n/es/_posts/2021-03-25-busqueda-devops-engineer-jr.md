@@ -104,6 +104,7 @@ nuestros clientes.
 * Tres semanas de vacaciones desde el primer día
 * Horarios flexibles
 * Trabajo remoto
+* ¡Cursos y certificaciones pagos por Mikroways!
 
 ## ¡Aplicá!
 
