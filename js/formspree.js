@@ -4,7 +4,7 @@ $contactForm.submit(function(e) {
   e.preventDefault();
   if(! $contactForm.valid()) return false;
   $.ajax({
-    url: '//formspree.io/' + 'contacto' + '@' + 'mikroways' + '.' + 'net',
+    url: 'https://0lsny8552e.execute-api.us-east-1.amazonaws.com/dev/crm/',
     method: 'POST',
     data: $(this).serialize(),
     dataType: 'json',
